@@ -31,8 +31,8 @@ html, body {
 
 .links img {
     width: 100px;
-    margin-top: 25px 0;
-    padding: 25px;
+    margin-top: 25px;
+    padding: 15px;
 }
 
 .email-box {
