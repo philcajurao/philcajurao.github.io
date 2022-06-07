@@ -58,6 +58,6 @@ body {
     color:transparent;
     transform:scale(1.3);
     box-shadow:none;
-  
+    cursor: pointer;
 }
 
