@@ -19,17 +19,15 @@
             <div class="nav-wrapper">
                 <div class="nav-content links center">
                     <!-- Dropdown Trigger -->
-                    <a class='dropdown-trigger grey darken-4 btn drpdown z-depth-0 waves-effect waves-light' href='#' data-target='dropdown1'>Contacts</a>
+                    <a class='dropdown-trigger grey darken-4 btn drpdown z-depth-0 waves-effect waves-light' href='#'
+                        data-target='dropdown1'>Contacts</a>
 
                     <!-- Dropdown Structure -->
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="https://www.instagram.com/hilai_73" class="instagram grey-text text-darken-4">Instagram</a>
-                        </li>
+                        <li><a href="https://www.instagram.com/hilai_73" class="instagram grey-text text-darken-4">Instagram</a></li>
                         <li><a href="https://twitter.com/hilai_73" class="twitter grey-text text-darken-4">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/philip.cajurao.7"
-                                class="facebook grey-text text-darken-4">Facebook</a></li>
-                        <li><a href="linkedin.com/in/cris-philip-cajurao-681649240"
-                                class="linkedin grey-text text-darken-4">LinkedIn</a></li>
+                        <li><a href="https://www.facebook.com/philip.cajurao.7" class="facebook grey-text text-darken-4">Facebook</a></li>
+                        <li><a href="linkedin.com/in/cris-philip-cajurao-681649240" class="linkedin grey-text text-darken-4">LinkedIn</a></li>
                     </ul>
 
                     <!-- <a href="#"><img title="Instagram" class="animate__animated animate__rollIn animate__delay-1s" src="images/icons/instagram-filled.png" alt=""></a>
@@ -77,37 +75,31 @@
                                 <div class="row">
                                     <h5>You can ask questions here.</h5>
                                     <p></p>
-                                    <form class="col s12">
+                                    <form class="col s12" action="https://formsubmit.co/philcajurao@gmail.com" method="POST">
                                         <div class="row content-form">
                                             <div class="input-field col s12 m6">
                                                 <i class="material-icons prefix">email</i>
-                                                <input placeholder="Email" id="email" type="email" class="validate"
-                                                    required>
-                                                <span class="helper-text" data-error="Invalid input"
-                                                    data-success="&#10004"> </span>
+                                                <input placeholder="Email" id="email" type="email" name="email" class="validate" required>
+                                                <span class="helper-text" data-error="Invalid input" data-success="&#10004"> </span>
                                             </div>
                                             <div class="input-field col s12 m6">
                                                 <i class="material-icons prefix ">account_circle</i>
-                                                <input placeholder="Name (Optional)" id="name" type="text"
-                                                    class="validate">
-                                                <span class="helper-text" data-error="Invalid input"
-                                                    data-success="&#10004"> </span>
+                                                <input placeholder="Name (Optional)" id="name" type="text" name="name">
+                                                <span class="helper-text" data-error="Invalid input" data-success="&#10004"> </span>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">
                                                 <i class="material-icons prefix">mode_edit</i>
-
-                                                <textarea placeholder="Message me.." id="textarea1"
-                                                    class="materialize-textarea"></textarea>
+                                                <textarea placeholder="Message me.." id="textarea1" type="text" name="message" class="materialize-textarea"></textarea>
                                             </div>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                                <button class="modal-close waves-effect waves-green btn-flat" type="submit">Send</button>
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
