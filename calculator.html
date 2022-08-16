@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phil's Calculator</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .root {
+            display: flex;
+            justify-content: center;
+        }
+
+        .calcu-container {
+            margin-top: 70px;
+            box-shadow: rgb(35 68 101 / 5%) 0px 4px 16px, rgb(35 68 101 / 5%) 0px 4px 4px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 7px;
+        }
+
+        .calcu-container h2 {
+            text-align: center;
+        }
+
+        .display-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display-container input:first-child {
+            padding: 10px;
+            height: 30px;
+        }
+
+        .display-container input:last-child {
+            padding: 5px;
+            height: 10px;
+        }
+
+        .display {
+            border: 1px solid rgba(73, 73, 73, 0.14);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 3;
+            grid-gap: 10px;
+        }
+
+        .buttons button:last-child {
+            grid-column: 1 / span 3;
+        }
+
+        #numberZero {
+            grid-column: 2;
+        }
+
+        #add {
+            grid-column: 4;
+            grid-row: 1 / span 2;
+        }
+
+        #result {
+            grid-column: 4;
+            grid-row: 3 / span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <div class="calcu-container">
+            <h2>Phil's Calculator</h2>
+            <div class="display-container">
+                <input disabled type="text" class="display" id="display"></input>
+                <h6>Preview</h6>
+                <input disabled type="text" class="preview" id="preview"></input>
+            </div>
+            <div class="buttons">
+                <button id="numberOne" onclick="getOne()">1</button>
+                <button id="numberTwo" onclick="getTwo()">2</button>
+                <button id="numberThree" onclick="getThree()">3</button>
+                <button id="numberFour" onclick="getFour()">4</button>
+                <button id="numberFive" onclick="getFive()">5</button>
+                <button id="numberSix" onclick="getSix()">6</button>
+                <button id="numberSeven" onclick="getSeven()">7</button>
+                <button id="numberEight" onclick="getEight()">8</button>
+                <button id="numberNine" onclick="getNine()">9</button>
+                <button id="numberZero" onclick="getZero()">0</button>
+                <button id="add" onclick="add()">+</button>
+                <button id="result" onclick="result()">=</button>
+                <button id="reset" onclick="reset()">Erase all</button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+        let arrayDisplay = [];
+
+        function reset() {
+            arrayDisplay = [];
+            arrayPreview = [];
+            arrayResult = [];
+            document.getElementById('display').value = '';
+            document.getElementById('preview').value = '';
+        }
+
+        function getOne() {
+
+            arrayDisplay.push(1);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getTwo() {
+            arrayDisplay.push(2);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getThree() {
+            arrayDisplay.push(3);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getFour() {
+            arrayDisplay.push(4);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getFive() {
+            arrayDisplay.push(5);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getSix() {
+            arrayDisplay.push(6);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getSeven() {
+            arrayDisplay.push(7);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getEight() {
+            arrayDisplay.push(8);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getNine() {
+            arrayDisplay.push(9);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        function getZero() {
+            arrayDisplay.push(0);
+            var number = arrayDisplay.join('');
+            var display = parseInt(number);
+            document.getElementById('display').value = display;
+        }
+
+        let arrayResult = [];
+        let arrayPreview = [];
+
+
+        function add() {
+            let number = parseInt(document.getElementById('display').value);
+            if (!number == '') {
+                arrayResult.push(number);
+                arrayPreview.push(number);
+                let preview = arrayPreview.join(' + ');
+                document.getElementById('preview').value = preview;
+                document.getElementById('display').value = '';
+                arrayDisplay = [];
+            }
+        }
+
+        function result() {
+            const number = parseInt(document.getElementById('display').value);
+            if (!number == '') {
+                arrayResult.push(number);
+                arrayPreview.push(number);
+                var preview = arrayPreview.join(' + ');
+                document.getElementById('preview').value = preview;
+                arrayDisplay = [];
+            }
+            var total = 0;
+            for (i = 0; i < arrayResult.length; i++) {
+                total += +arrayResult[i];
+            }
+
+            document.getElementById('preview').value = preview + " = " + total;
+            document.getElementById('display').value = 'Answer is ' + total;
+            arrayResult = [];
+            arrayPreview = [];
+        }
+
+
+
+    </script>
+</body>
+
+</html>
