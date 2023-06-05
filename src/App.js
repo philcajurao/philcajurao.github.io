@@ -1,32 +1,60 @@
 import React from "react";
 import { BiMenu } from "react-icons/bi";
 import phil from "./images/Phil.png";
+import bg from "./images/Background.png";
 
 function App() {
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDoubleClick = (e) => {
+    e.preventDefault();
+  };
   return (
-    <div className="main text-[#111] bg-white caret-transparent">
+    <div
+      className="main text-[#111] caret-transparent"
+      onContextMenu={handleContextMenu}
+      onDoubleClick={handleDoubleClick}
+    >
       <div className="navbar top-0 w-full">
         <div className="fixed flex px-7 justify-between w-full">
           <button className="p-3 font-extrabold">Phil.</button>
           <div className="flex">
-            <BiMenu size={30} className="cursor-pointer sm:hidden self-center" />
+            <BiMenu
+              size={30}
+              className="cursor-pointer sm:hidden self-center"
+            />
             <ul className="sm:flex hidden ">
               <li>
-                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">About me</button>
+                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">
+                  About me
+                </button>
               </li>
               <li>
-                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">Projects</button>
+                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">
+                  Projects
+                </button>
               </li>
               <li>
-                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">Contacts</button>
+                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">
+                  Contacts
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </div>
-
-      <div className="header flex justify-center h-[90vh] h-[90svh]">
-        <img src={phil} alt="Phil" className="w-96 mt-auto mb-[-1px]" draggable="false" />
+      <div className="fixed inset-0 z-[-1]">
+        <img src={bg} alt="Background" className="w-full h-full object-cover" />
+      </div>
+      <div className="header flex justify-center h-[90vh] h-[90svh] relative z-10">
+        <img
+          src={phil}
+          alt="Phil"
+          className="w-96 mt-auto mb-[-1px] pointer-events-none"
+          draggable="false"
+        />
       </div>
 
       <div className="content bg-[#111] p-3 bottom-0 z-20">

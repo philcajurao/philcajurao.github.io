@@ -12,6 +12,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -webkit-user-select: none; /* Safari and Chrome */
+  user-select: none;
+  background: url("../src/images/Background.png");
 }
 
 code {
