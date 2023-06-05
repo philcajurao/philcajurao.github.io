@@ -5,32 +5,32 @@ import phil from "./images/Phil.png";
 function App() {
   return (
     <div className="main text-[#111] bg-white caret-transparent">
-      <div className="navbar top-0 w-full border border-black">
-        <div className="fixed flex justify-between w-full">
+      <div className="navbar top-0 w-full">
+        <div className="fixed flex px-7 justify-between w-full">
           <button className="p-3 font-extrabold">Phil.</button>
-          <div>
-            <BiMenu size={30} className="cursor-pointer sm:hidden p-3" />
+          <div className="flex">
+            <BiMenu size={30} className="cursor-pointer sm:hidden self-center" />
             <ul className="sm:flex hidden ">
               <li>
                 <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">About me</button>
               </li>
               <li>
-                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">Contacts</button>
+                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">Projects</button>
               </li>
               <li>
-                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">Projects</button>
+                <button className="p-3 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]">Contacts</button>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="header flex flex-col items-center h-[90vh] h-[90svh]">
-        <img src={phil} alt="Phil" className="w-96 mt-auto" draggable="false" />
+      <div className="header flex justify-center h-[90vh] h-[90svh]">
+        <img src={phil} alt="Phil" className="w-96 mt-auto mb-[-1px]" draggable="false" />
       </div>
 
-      <div className="content bg-[#111] p-3 bottom-0">
-        <div className="text-[#fefefe] flex flex-col items-center mx-[20vw] ">
+      <div className="content bg-[#111] p-3 bottom-0 z-20">
+        <div className="text-[#fefefe] flex flex-col items-center mx-[20vw]">
           <div className="flex flex-col items-center mt-2">
             <h1 className="font-bold">PHIL CAJURAO</h1>
             <p>&lt;p&gt;Aspiring Developer&lt;/p&gt;</p>
