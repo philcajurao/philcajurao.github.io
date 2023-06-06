@@ -4,8 +4,8 @@ import { BiMenu } from 'react-icons/bi'
 function NavBar() {
   return (
     <div className="navbar top-0 w-full z-20">
-        <div className="fixed flex px-7 justify-between w-full">
-          <button className="p-3 font-extrabold">Phil.</button>
+        <div className=" flex px-7 justify-between w-full">
+          <button className=" font-extrabold">Phil.</button>
           <div className="flex">
             <BiMenu
               size={30}
