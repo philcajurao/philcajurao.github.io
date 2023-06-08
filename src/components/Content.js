@@ -38,12 +38,12 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                 <div id="contacts" ref={cont4} className="mt-40 mb-96">
                     <h2 className="text-[#555] text-lg">Contact</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
-                        <p className="">
-                            Ex sunt ut tempor aliqua eu excepteur. Aute laboris incididunt Lorem pariatur nulla cillum Lorem dolor id cillum eu Lorem. Ullamco excepteur laborum proident Lorem qui magna proident aute aliquip tempor non exercitation non occaecat. Exercitation enim consectetur magna officia. Sunt proident minim excepteur eu enim sit ad sunt velit incididunt esse fugiat eiusmod aute.
-                        </p>
-                        <p className="">
-                            Sit amet sint reprehenderit est cupidatat dolore consequat do consectetur aliquip aliqua esse veniam et. Est laboris qui aliqua consectetur Lorem aute commodo consequat veniam elit. Nostrud ex laboris adipisicing eu nulla voluptate sint pariatur non consequat.
-                        </p>
+                        <ul className='flex justify-between space-x-20'>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Facebook</li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Instagram</li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Twitter</li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>09616259849</li>
+                        </ul>
                     </div>
                 </div>
             </div>

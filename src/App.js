@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import NavBar from "./components/NavBar";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
+import EmailContact from "./components/EmailContact";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -98,6 +99,8 @@ function App() {
       </div>
 
       <Content cont1={cont1} cont2={cont2} cont3={cont3} cont4={cont4} />
+
+      <EmailContact />
 
       <Footer />
     </div>
