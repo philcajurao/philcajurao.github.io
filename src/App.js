@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import NavBar from "./components/NavBar";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
+import EmailContact from "./components/EmailContact";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -51,16 +52,16 @@ function App() {
         scrub: true,
       },
     });
-    gsap.fromTo(content1, {opacity: 0}, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content1, {opacity: 0, }, {opacity: 1,  duration: 1, scrollTrigger: {
       trigger: content1
     }});
-    gsap.fromTo(content2, {opacity: 0}, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content2, {opacity: 0, }, {opacity: 1,  duration: 1, scrollTrigger: {
       trigger: content2
     }});
-    gsap.fromTo(content3, {opacity: 0}, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content3, {opacity: 0, }, {opacity: 1,  duration: 1, scrollTrigger: {
       trigger: content3
     }});
-    gsap.fromTo(content4, {opacity: 0}, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content4, {opacity: 0, }, {opacity: 1,  duration: 1, scrollTrigger: {
       trigger: content4
     }});
   }, []);
@@ -92,12 +93,14 @@ function App() {
         <img
           src={phil}
           alt="Phil"
-          className="w-96 mt-auto mb-[-1px] pointer-events-none"
+          className="w-96 mt-auto mb-[-1px] pointer-events-none drop-shadow-4xl"
           draggable="false"
         />
       </div>
 
       <Content cont1={cont1} cont2={cont2} cont3={cont3} cont4={cont4} />
+
+      <EmailContact />
 
       <Footer />
     </div>

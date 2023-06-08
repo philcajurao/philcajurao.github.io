@@ -8,7 +8,7 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                     <h1 className="font-bold text-xl">PHIL CAJURAO</h1>
                     <p className="">&lt;p&gt;Aspiring Developer&lt;/p&gt;</p>
                 </div>
-                <div ref={cont1} className="mt-12">
+                <div id="about" ref={cont1} className="mt-12">
                     <h2 className="text-[#555] text-lg">About Me</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
                         <p className="">
@@ -24,18 +24,7 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                         </p>
                     </div>
                 </div>
-                <div ref={cont2} className="mt-40">
-                    <h2 className="text-[#555] text-lg">School</h2>
-                    <div className="flex flex-col space-y-5 mt-2 text-justify">
-                        <p className="">
-                            Ipsum et est et Lorem aliqua dolore. Amet deserunt commodo adipisicing quis culpa cupidatat est ut veniam sit. Ipsum reprehenderit in eiusmod ea exercitation anim adipisicing laboris minim. Do nulla commodo magna aute proident pariatur consectetur nostrud tempor. Incididunt cillum nostrud ullamco culpa. Cupidatat fugiat labore labore et elit dolor amet officia dolore irure consequat anim. Est irure irure anim dolore labore ut ut aliquip.
-                        </p>
-                        <p className="">
-                            Deserunt esse commodo occaecat aute non ad eiusmod laborum reprehenderit. Eiusmod eiusmod culpa sunt commodo voluptate. Eiusmod esse anim enim aute proident culpa magna exercitation nulla exercitation dolore aliquip exercitation. Reprehenderit Lorem enim mollit laboris. Pariatur ex culpa dolore officia mollit incididunt. Commodo dolor esse exercitation enim cillum cillum reprehenderit.
-                        </p>
-                    </div>
-                </div>
-                <div ref={cont3} className="mt-40">
+                <div id="projects" ref={cont3} className="mt-40">
                     <h2 className="text-[#555] text-lg">Projects</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
                         <p className="">
@@ -46,15 +35,15 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                         </p>
                     </div>
                 </div>
-                <div ref={cont4} className="mt-40 mb-20">
+                <div id="contacts" ref={cont4} className="mt-40 mb-96">
                     <h2 className="text-[#555] text-lg">Contact</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
-                        <p className="">
-                            Ex sunt ut tempor aliqua eu excepteur. Aute laboris incididunt Lorem pariatur nulla cillum Lorem dolor id cillum eu Lorem. Ullamco excepteur laborum proident Lorem qui magna proident aute aliquip tempor non exercitation non occaecat. Exercitation enim consectetur magna officia. Sunt proident minim excepteur eu enim sit ad sunt velit incididunt esse fugiat eiusmod aute.
-                        </p>
-                        <p className="">
-                            Sit amet sint reprehenderit est cupidatat dolore consequat do consectetur aliquip aliqua esse veniam et. Est laboris qui aliqua consectetur Lorem aute commodo consequat veniam elit. Nostrud ex laboris adipisicing eu nulla voluptate sint pariatur non consequat.
-                        </p>
+                        <ul className='flex justify-between space-x-20'>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Facebook</li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Instagram</li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Twitter</li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>09616259849</li>
+                        </ul>
                     </div>
                 </div>
             </div>
