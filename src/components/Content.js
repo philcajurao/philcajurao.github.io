@@ -46,7 +46,7 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                         </p>
                     </div>
                 </div>
-                <div ref={cont4} className="mt-40 mb-20">
+                <div ref={cont4} className="mt-40 mb-96">
                     <h2 className="text-[#555] text-lg">Contact</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
                         <p className="">
