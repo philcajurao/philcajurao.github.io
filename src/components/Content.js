@@ -8,7 +8,7 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                     <h1 className="font-bold text-xl">PHIL CAJURAO</h1>
                     <p className="">&lt;p&gt;Aspiring Developer&lt;/p&gt;</p>
                 </div>
-                <div ref={cont1} className="mt-12">
+                <div id="about" ref={cont1} className="mt-12">
                     <h2 className="text-[#555] text-lg">About Me</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
                         <p className="">
@@ -24,18 +24,7 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                         </p>
                     </div>
                 </div>
-                <div ref={cont2} className="mt-40">
-                    <h2 className="text-[#555] text-lg">School</h2>
-                    <div className="flex flex-col space-y-5 mt-2 text-justify">
-                        <p className="">
-                            Ipsum et est et Lorem aliqua dolore. Amet deserunt commodo adipisicing quis culpa cupidatat est ut veniam sit. Ipsum reprehenderit in eiusmod ea exercitation anim adipisicing laboris minim. Do nulla commodo magna aute proident pariatur consectetur nostrud tempor. Incididunt cillum nostrud ullamco culpa. Cupidatat fugiat labore labore et elit dolor amet officia dolore irure consequat anim. Est irure irure anim dolore labore ut ut aliquip.
-                        </p>
-                        <p className="">
-                            Deserunt esse commodo occaecat aute non ad eiusmod laborum reprehenderit. Eiusmod eiusmod culpa sunt commodo voluptate. Eiusmod esse anim enim aute proident culpa magna exercitation nulla exercitation dolore aliquip exercitation. Reprehenderit Lorem enim mollit laboris. Pariatur ex culpa dolore officia mollit incididunt. Commodo dolor esse exercitation enim cillum cillum reprehenderit.
-                        </p>
-                    </div>
-                </div>
-                <div ref={cont3} className="mt-40">
+                <div id="projects" ref={cont3} className="mt-40">
                     <h2 className="text-[#555] text-lg">Projects</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
                         <p className="">
@@ -46,7 +35,7 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                         </p>
                     </div>
                 </div>
-                <div ref={cont4} className="mt-40 mb-96">
+                <div id="contacts" ref={cont4} className="mt-40 mb-96">
                     <h2 className="text-[#555] text-lg">Contact</h2>
                     <div className="flex flex-col space-y-5 mt-2 text-justify">
                         <p className="">

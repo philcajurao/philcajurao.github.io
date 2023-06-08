@@ -92,7 +92,7 @@ function App() {
         <img
           src={phil}
           alt="Phil"
-          className="w-96 mt-auto mb-[-1px] pointer-events-none"
+          className="w-96 mt-auto mb-[-1px] pointer-events-none drop-shadow-4xl"
           draggable="false"
         />
       </div>
