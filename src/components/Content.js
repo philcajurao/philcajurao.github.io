@@ -28,13 +28,13 @@ function Content({ cont1, cont2, cont3, cont4, }) {
                     <h2 className="text-[#555] text-lg">Projects</h2>
                     <div className="grid grid-cols-2 gap-10 mt-2 text-justify">
                         <div className=" p-5 flex flex-col items-center">
-                            <div className='text-left slef-start'>Title</div>
+                            <div className='text-left slef-starth3  '>Title</div>
                             <div>Media</div>
                             <div>Summary Laborum mollit cillum culpa culpa Lorem dolore aliquip eiusmod ea anim.</div>
                         </div>
                         <div className="p-5 flex flex-col items-center">
 
-                            <di className='text-left  slef-start'>Title</di>
+                            <di className='text-left  slef-starth3  '>Title</di>
                             <div>Media</div>
                             <div>Summary Velit proident labore duis exercitation officia ullamco duis.</div>
                         </div>
