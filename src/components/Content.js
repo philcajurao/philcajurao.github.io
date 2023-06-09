@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Content({ cont1, cont2, cont3, cont4,}) {
+function Content({ cont1, cont2, cont3, cont4, }) {
     return (
         <div className="content bg-[#111] p-3 bottom-0 z-20">
             <div className="text-[#fefefe] flex flex-col items-center mx-[20vw]">
@@ -26,24 +26,30 @@ function Content({ cont1, cont2, cont3, cont4,}) {
                 </div>
                 <div id="projects" ref={cont3} className="mt-40">
                     <h2 className="text-[#555] text-lg">Projects</h2>
-                    <div className="flex flex-col space-y-5 mt-2 text-justify">
-                        <p className="">
-                            Culpa deserunt do reprehenderit sunt dolor ad quis ut in aliquip consectetur veniam. Dolor ut aliqua dolor proident culpa occaecat deserunt adipisicing eu non in. Ipsum laborum eiusmod exercitation cillum cupidatat deserunt aute consectetur anim fugiat minim labore nostrud. Nisi ex cupidatat est sint magna deserunt. Consequat adipisicing quis dolore commodo qui amet in tempor irure exercitation in voluptate anim sit.
-                        </p>
-                        <p className="">
-                            Commodo proident tempor non aliqua deserunt eu nisi. Labore dolor ea est adipisicing elit. Tempor mollit veniam occaecat eu et ea in ad aliquip cillum.
-                        </p>
+                    <div className="grid grid-cols-2 gap-10 mt-2 text-justify">
+                        <div className=" p-5 flex flex-col items-center">
+                            <div className='text-left slef-start'>Title</div>
+                            <div>Media</div>
+                            <div>Summary Laborum mollit cillum culpa culpa Lorem dolore aliquip eiusmod ea anim.</div>
+                        </div>
+                        <div className="p-5 flex flex-col items-center">
+
+                            <di className='text-left  slef-start'>Title</di>
+                            <div>Media</div>
+                            <div>Summary Velit proident labore duis exercitation officia ullamco duis.</div>
+                        </div>
                     </div>
                 </div>
-                <div id="contacts" ref={cont4} className="mt-40 mb-96">
-                    <h2 className="text-[#555] text-lg">Contact</h2>
-                    <div className="flex flex-col space-y-5 mt-2 text-justify">
+                <div id="contacts" ref={cont4} className="mt-40 ">
+                    <h2 className="text-[#555] text-lg text-center">Contact</h2>
+                    <div className="flex flex-col space-y-5 mt-2 items-center text-justify">
                         <ul className='flex justify-between space-x-20'>
-                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Facebook</li>
-                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Instagram</li>
-                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>Twitter</li>
-                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'>09616259849</li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'> <a href='https://www.facebook.com/philip.cajurao.7' target='_blank'>Facebook</a></li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'> <a href='https://www.instagram.com/philcajurao.dev' target='_blank'>Instagram</a></li>
+                            <li className='hover:bg-[#fefefe] hover:text-[#111] p-5 cursor-pointer duration-300'> <a href='https://twitter.com/hilai_73' target='_blank'>Twitter</a></li>
                         </ul>
+                        <div className=' p-5 cursor-pointer duration-300'>09616259849</div>
+
                     </div>
                 </div>
             </div>

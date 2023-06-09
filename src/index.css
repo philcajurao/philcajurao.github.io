@@ -46,12 +46,12 @@ code {
   height: 100%;
   background-color: #fefefe;
   transform: translate(-100%, -100%);
-  transition: all 1s;
+  transition: all .7s;
   z-index: -1;
 }
 
 .emailBtn:hover::before {
-  transform: translateY(0);
+  transform: translate(0);
 }
 
 .emailBtn::after {
@@ -63,7 +63,7 @@ code {
   height: 100%;
   background-color: #fefefe;
   transform: translate(100%, 100%);
-  transition: all 1s;
+  transition: all .7s;
   z-index: -1;
 }
 

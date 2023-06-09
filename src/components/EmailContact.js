@@ -26,7 +26,7 @@ function EmailContact() {
   };
 
   return (
-    <div className="flex justify-center bg-[#111] p-3">
+    <div className="flex justify-center bg-[#111] p-3 ">
       <button className="emailBtn">
         Email me
       </button>
