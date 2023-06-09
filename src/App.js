@@ -21,6 +21,12 @@ function App() {
   const handleDoubleClick = (e) => {
     e.preventDefault();
   };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+    }
+  };
+  const home = useRef(null);
   const backG1 = useRef(null);
   const backG2 = useRef(null);
   const cont1 = useRef(null);
@@ -28,6 +34,7 @@ function App() {
   const cont3 = useRef(null);
   const cont4 = useRef(null);
   useEffect(() => {
+    const homeLink = home.current;
     const background1 = backG1.current;
     const background2 = backG2.current;
     const content1 = cont1.current;
@@ -52,6 +59,9 @@ function App() {
         scrub: true,
       },
     });
+    gsap.fromTo(homeLink, {opacity: 1, }, {opacity: 1,  duration: 1, scrollTrigger: {
+      trigger: homeLink
+    }});
     gsap.fromTo(content1, {opacity: 0, }, {opacity: 1,  duration: 1, scrollTrigger: {
       trigger: content1
     }});
@@ -70,10 +80,11 @@ function App() {
       className="main text-[#111] caret-transparent"
       onContextMenu={handleContextMenu}
       onDoubleClick={handleDoubleClick}
+      onKeyDown={handleKeyDown}
     >
       <NavBar />
 
-      <div className="absolute inset-0 z-[-1] overflow-hidden">
+      <div id="home" className="absolute inset-0 z-[-1] overflow-hidden">
         {/* <img src={bg} alt="Background" className="w-full h-full object-cover" /> */}
         <img
           src={bg1}
@@ -89,11 +100,11 @@ function App() {
         />
       </div>
       {/* motion-safe:animate-translateRight */}
-      <div className="header flex justify-center h-[85vh] h-[85svh] ">
+      <div className="header flex justify-center mt-20 h-[85vh] h-[85svh] ">
         <img
           src={phil}
           alt="Phil"
-          className="w-96 mt-auto mb-[-1px] pointer-events-none drop-shadow-4xl"
+          className="w-96 mt-auto mb-[-1px] pointer-events-none drop-shadow-2xl"
           draggable="false"
         />
       </div>

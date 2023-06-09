@@ -14,52 +14,61 @@ function NavBar() {
     setShowSideBar(false);
   };
   return (
-    <div className="navbar top-0 w-full z-20 flex items-center px-7 justify-between">
-      <button className="font-extrabold h-full p-5">Phil.</button>
+    <div className="navbar fixed top-0 w-full z-20 flex items-center px-7 justify-between shadow bg-[#fefefe]">
+      <h3 className="font-black text-xl h-full">philcajurao.</h3>
       <BiMenu
-        size={30}
-        className="cursor-pointer sm:hidden self-center h-full"
+        size={65}
+        className="cursor-pointer sm:hidden self-center p-5 h-full"
         onClick={handleShowSideBar}
       />
-      <ul className="sm:flex hidden">
-      
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={2500}
-            className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
-          >
-            About me
-          </Link>
-        
-      
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={2500}
-            className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
-          >
-            Projects
-          </Link>
-        
-      
-          <Link
-            to="contacts"
-            spy={true}
-            smooth={true}
-            duration={2500}
-            className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
-          >
-            Contacts
-          </Link>
-        
+      <ul className="sm:flex hidden font-medium">
+
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={2500}
+          className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
+        >
+          Home
+        </Link>
+
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={2500}
+          className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
+        >
+          About me
+        </Link>
+
+
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={2500}
+          className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
+        >
+          Projects
+        </Link>
+
+
+        <Link
+          to="contacts"
+          spy={true}
+          smooth={true}
+          duration={2500}
+          className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
+        >
+          Contacts
+        </Link>
+
       </ul>
       <div
-        className={`fixed flex flex-col justify-between top-0 left-0 bg-[#222] h-full w-full z-20 duration-300 ${
-          showSideBar ? "translate-y-[-100]" : "translate-y-full"
-        }`}
+        className={`fixed flex flex-col justify-between top-0 left-0 bg-[#222] h-full w-full z-20 duration-300 ${showSideBar ? "translate-y-[-100]" : "translate-y-full"
+          }`}
       >
         <button onClick={handleCloseShowSideBar}>
           <MdClose size={30} className="text-[#fefefe] m-5 float-right" />
@@ -69,6 +78,18 @@ function NavBar() {
           <h2 className="text-[#fefefe]">Phil Cajurao</h2>
         </div>
         <div role="menu" className="py-3 flex flex-col items-center">
+        <Link
+            spy={true}
+            smooth={true}
+            duration={2500}
+            to="home"
+            onClick={handleCloseShowSideBar}
+            className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
+            role="menuitem"
+          // onClick={signout}
+          >
+            Home
+          </Link>
           <Link
             spy={true}
             smooth={true}
@@ -77,7 +98,7 @@ function NavBar() {
             onClick={handleCloseShowSideBar}
             className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
             role="menuitem"
-            // onClick={signout}
+          // onClick={signout}
           >
             About me
           </Link>
@@ -89,7 +110,7 @@ function NavBar() {
             onClick={handleCloseShowSideBar}
             className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
             role="menuitem"
-            // onClick={signout}
+          // onClick={signout}
           >
             Projects
           </Link>
@@ -101,7 +122,7 @@ function NavBar() {
             onClick={handleCloseShowSideBar}
             className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
             role="menuitem"
-            // onClick={signout}
+          // onClick={signout}
           >
             Contacts
           </Link>
