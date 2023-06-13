@@ -6,7 +6,7 @@ import About from './About'
 function Content({ cont1, cont2, cont3, cont4, }) {
     return (
         <div className="content bg-[#111] p-3 bottom-0 z-20">
-            <div className="text-[#fefefe] flex flex-col items-center mx-[20vw]">
+            <div className="text-[#fefefe] flex flex-col items-center mx-[15vw]">
                 <div className="flex flex-col items-center mt-2">
                     <h1 className="font-bold text-xl">PHIL CAJURAO</h1>
                     <p className="">&lt;p&gt;Aspiring Developer&lt;/p&gt;</p>
