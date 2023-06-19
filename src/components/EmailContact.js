@@ -1,54 +1,25 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import EmailForm from "./EmailForm";
+import Modal from "./Modal";
 
 function EmailContact() {
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    console.log(e.name);
+  const [open, setOpen] = useState(false);
 
-    // emailjs
-    //   .sendForm(
-    //     "service_v97u8tm",
-    //     "template_xhl1mz9",
-    //     form.current,
-    //     "p3pYmTDbiXFd-HVNU"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
     <div className="flex justify-center bg-[#111] p-3 ">
-      <button className="emailBtn">
+      <button className="emailBtn" onClick={() => setOpen(true)}>
         Email me
       </button>
 
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="flex flex-col items-center hidden"
-      >
-        <label>Your email</label>
-        <input type="email" name="user_email" className="form-input border" />
-        <label>Your name</label>
-        <input type="text" name="user_name" className="form-input border" />
-        <label>Message</label>
-        <textarea name="message" className="form-input border" />
-        <button
-          type="submit"
-          className="bg-[#333] text-[#fefefe] p-2 rounded-lg m-2 shadow-2xl focus:shadow-none "
-        >
-          Submit
-        </button>
-      </form>
+      <Modal open={open} handleClose={handleClose}>
+        <EmailForm handleClose={handleClose}/>
+      </Modal>
     </div>
   );
 }

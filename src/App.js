@@ -100,18 +100,16 @@ function App() {
         />
       </div>
       {/* motion-safe:animate-translateRight */}
-      <div className="header flex justify-center mt-20 h-[85vh] h-[85svh] ">
+      <div className="header flex justify-center mt-20 h-[80vh] h-[80svh] ">
         <img
           src={phil}
           alt="Phil"
-          className="w-96 mt-auto mb-[-1px] pointer-events-none drop-shadow-2xl"
+          className="w-[32rem] mt-auto mb-[-1px] pointer-events-none drop-shadow-2xl"
           draggable="false"
         />
       </div>
 
       <Content cont1={cont1} cont2={cont2} cont3={cont3} cont4={cont4} />
-
-      <EmailContact />
 
       <Footer />
     </div>

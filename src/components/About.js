@@ -3,8 +3,8 @@ import React from 'react'
 function About() {
     return (
         <div>
-            <h2 className="text-[#555] text-lg">About Me</h2>
-            <div className="flex flex-col space-y-5 mt-2 text-justify">
+            <h2 className="text-[#fefefe] text-lg text-center">About Me</h2>
+            <div className="flex flex-col space-y-5 mt-2 text-justify text-[#777]">
                 <p className="">
                     Hi! My name's <b>Phil</b>, currently a graduating college student aspiring
                     to be a great developer. I've met programming in an interesting

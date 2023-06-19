@@ -4,12 +4,13 @@ import churchSite from "../images/Church Website.jpeg";
 function Project() {
   return (
     <div>
-      <h2 className="text-[#555] text-lg">Projects</h2>
-      <div className="grid gap-10 mt-2 text-justify">
-        <div className="card bg-[#fefefe] text-[#111] p-5 w-full md:flex md:space-x-5">
+      {/* <h2 className="text-[#555] text-lg">Projects</h2> */}
+      <div className="grid gap-10 mt-2 text-justify text-[#777]">
+        Projects coming soon.. &#129488;
+        {/* <div className="card text-[#111] p-5 w-full md:flex md:space-x-5">
           <div>
             Project NLA
-            <div className="overflow-y-scroll overflow-x-hidden h-64 shadow my-2">
+            <div className="overflow-y-scroll overflow-x-hidden h-64 w-[300px] shadow my-2 border">
               <img
                 alt="First Project"
                 src={churchSite}
@@ -30,7 +31,7 @@ function Project() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
