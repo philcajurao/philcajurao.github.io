@@ -63,7 +63,7 @@ code {
   height: 100%;
   background-color: #fefefe;
   transform: translateX(100%);
-  transition: all .5s;
+  transition: all .3s;
   z-index: -1;
 }
 

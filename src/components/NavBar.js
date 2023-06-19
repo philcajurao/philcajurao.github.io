@@ -68,7 +68,7 @@ function NavBar() {
       </ul>
       <div
         className={`fixed flex flex-col justify-between top-0 left-0 bg-[#222] h-full w-full z-20 duration-300 ${
-          showSideBar ? "translate-y-[-100]" : "translate-y-full"
+          showSideBar ? "translate-y-[-120]" : "translate-y-full"
         }`}
       >
         <button

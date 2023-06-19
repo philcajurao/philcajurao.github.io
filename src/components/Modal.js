@@ -11,7 +11,12 @@ function Modal({ open, handleClose, children }) {
     `}
     >
       <div
-        className={`p-5 bg-[#fefefe] shadow-xl w-full sm:max-w-[50vw] sm:h-auto mx-auto h-[100vh] sm:border transition-all duration-300 ${open ? 'sm:scale-100 sm:opacity-100 translate-y-0' : 'sm:scale-50 sm:opacity-0 translate-y-full'}`}
+        className={`p-5 bg-[#fefefe] shadow-xl w-full sm:max-w-[50vw] sm:h-auto mx-auto h-[100vh] sm:border transition-all duration-300 
+        ${
+          open
+            ? "sm:scale-100 sm:opacity-100 translate-y-0"
+            : "sm:scale-0 sm:opacity-0 translate-y-full sm:translate-y-80"
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
         {children}
