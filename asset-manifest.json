@@ -1,19 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.20161d5f.css",
-    "main.js": "/static/js/main.0dade97f.js",
+    "main.css": "/static/css/main.dda30760.css",
+    "main.js": "/static/js/main.806ba7d5.js",
+    "static/media/Internship Resume.pdf": "/static/media/Internship Resume.c9ebe08f8dae920af8cb.pdf",
     "static/media/Background.png": "/static/media/Background.b33a50378af4a94d3aca.png",
     "static/media/Phil.png": "/static/media/Phil.c87d66250de09119b7c0.png",
     "static/media/Church Website.jpeg": "/static/media/Church Website.2b5b1a808dda9459d736.jpeg",
     "static/media/favicon.png": "/static/media/favicon.421f2f755e89fe6d7520.png",
     "static/media/1.png": "/static/media/1.1346f3450ddfbb3a73b1.png",
     "static/media/2.png": "/static/media/2.2d65964f827409af517a.png",
+    "static/media/react.png": "/static/media/react.6b33a6ee36ac6f9185cf.png",
+    "static/media/php.png": "/static/media/php.9fac170792256b4ca593.png",
+    "static/media/java.png": "/static/media/java.3384aae14a7f366aa7b0.png",
+    "static/media/tailwind.png": "/static/media/tailwind.b760c5890aa982b4806e.png",
+    "static/media/github.png": "/static/media/github.186aca90450861e91d15.png",
+    "static/media/materialize.png": "/static/media/materialize.443681980d833fe28281.png",
+    "static/media/mui.png": "/static/media/mui.f62a790bda6552f9e335.png",
+    "static/media/css.png": "/static/media/css.463e319bad8e0edf1ef7.png",
+    "static/media/linkedin.png": "/static/media/linkedin.d93486e26ee76a221f42.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
-    "main.20161d5f.css.map": "/static/css/main.20161d5f.css.map",
-    "main.0dade97f.js.map": "/static/js/main.0dade97f.js.map"
+    "main.dda30760.css.map": "/static/css/main.dda30760.css.map",
+    "main.806ba7d5.js.map": "/static/js/main.806ba7d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.20161d5f.css",
-    "static/js/main.0dade97f.js"
+    "static/css/main.dda30760.css",
+    "static/js/main.806ba7d5.js"
   ]
 }
