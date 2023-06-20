@@ -1,10 +1,20 @@
-import React, { useState } from "react";
-import Footer from "./Footer";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import Success from "./Success";
+import Failed from "./Failed";
+import Loading from "./Loading";
 
 function EmailForm({ handleClose }) {
 
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    const form = useRef();
+
+    const emailEl = document.getElementById('email');
+    const nameEl = document.getElementById('name');
+    const messageEl = document.getElementById('message');
+
+    const [isSubmittedSuccessfully, setIsSubmittedSuccessfully] = useState(false);
+    const [isSubmittedFailed, setIsSubmittedFailed] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(true);
 
     const [errorEmail, setErrorEmail] = useState(false);
     const [emptyEmail, setEmptyEmail] = useState(false);
@@ -19,17 +29,15 @@ function EmailForm({ handleClose }) {
         name: '',
         message: ''
     });
-    const handleChange = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
+    const handleChange = () => {
 
-        if(formData.email != '') {
+        if(emailEl.value != '') {
             setEmptyEmail(false)
         }
-        if(formData.name != '') {
+        if(nameEl.value != '') {
             setEmptyName(false)
         }
-        if(formData.message != '') {
+        if(messageEl.value != '') {
             setEmptyMessage(false)
         }
 
@@ -47,44 +55,70 @@ function EmailForm({ handleClose }) {
         } else {
             setErrorName(false)
         }
-
-        setFormData((prevFormData) => {
-            return {
-              ...prevFormData,
-              [name]: value,
-            };
-        })
     }
 
     const handleSuccessSubmission = () => {
-            setIsSubmitted(true);
+            setIsSubmittedSuccessfully(true);
         setTimeout(() => {
-            setIsSubmitted(false);
+            setIsSubmittedSuccessfully(false);
+            
+            emailEl.value = '';
+            nameEl.value = '';
+            messageEl.value = '';
         }, 3000);
     }
+    const handleFailedSubmission = () => {
+        setIsSubmittedFailed(true);
+    setTimeout(() => {
+        setIsSubmittedFailed(false);
+        
+            emailEl.value = '';
+            nameEl.value = '';
+            messageEl.value = '';
+    }, 4000);
+}
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if(formData.email == '') {
+        if(emailEl.value == '') {
             setEmptyEmail(true)
-        }
-        if(formData.name == '') {
+        } else if(nameEl.value == '') {
             setEmptyName(true)
-        }
-        if(formData.message == '') {
+        } else if(messageEl.value == '') {
             setEmptyMessage(true)
+        } else {
+            
+            // setTimeout(() => {  
+                setIsSubmitted(false);
+                // setTimeout(() => {  
+                    emailjs 
+                .sendForm(
+                "service_v97u8tm",
+                "template_xhl1mz9",
+                form.current,
+                "p3pYmTDbiXFd-HVNU"
+                )
+                .then(
+                (result) => {
+                    console.log(result.text);
+                    console.log("message sent");
+                    handleSuccessSubmission();
+                    setIsSubmitted(true);
+                },
+                (error) => {
+                    console.log(error.text);
+                    handleFailedSubmission();
+                    setIsSubmitted(true);
+                }
+                );
+            //     }, 5000);
+                
+            // }, 1000);
         }
 
-        handleSuccessSubmission();
+        
 
-        setFormData(
-            {
-                email: '',
-                name: '',
-                message: ''
-            }
-        )
 
     }
 
@@ -95,49 +129,47 @@ function EmailForm({ handleClose }) {
                 <span className="text-2xl font-medium absolute right-5 top-10 sm:self-end sm:static sm:right-auto sm:top-auto cursor-pointer" onClick={handleClose}>&#10006;</span>
                 <p className="text-2xl font-semibold tracking-wide text-left">Send me an email &#128522;</p>
             </div>
-            <form className="flex flex-col items-center space-y-5 caret-[#111] my-5"  onSubmit={handleSubmit}>
+            <form className="flex flex-col items-center caret-[#111] my-5" ref={form} onSubmit={handleSubmit}>
+                    <input type="email" id="email" autoComplete='off' name="from_email" placeholder="Type your email here..." onChange={handleChange} className={`form-input border p-3 w-full focus:rounded-none
+                        ${emptyEmail ? 'border-red-500' : "border-[#111]"}
+                    `} />
+                    {/* <span className={`ml-2 text-red-500 ${errorEmail ? 'block' : "hidden"}`}>Doesn't look like an email.</span> */}
+                    <span className={`ml-2 mt-0 self-start text-red-500 ${emptyEmail ? 'block' : "hidden"}`}>Please enter an email.</span>
 
-                {/* <label>Your email</label> */}
-                <div className="w-full">
-                    <input type="email" value={formData.email} onChange={handleChange} autoComplete='off' name="email" placeholder="Type your email here..." className={`form-input border p-3 w-full focus:rounded-none 
-                    ${errorEmail || emptyEmail ? 'border-red-500' : "border-[#111]"}`} 
-                    />
-                    <span className={`ml-2 text-red-500 ${errorEmail ? 'block' : "hidden"}`}>Sorry, it doesn't look like an email.</span>
-                    <span className={`ml-2 text-red-500 ${emptyEmail ? 'block' : "hidden"}`}>Please enter an email.</span>
-                </div>
+                    <input type="text" id="name" autoComplete='off' name="from_name" placeholder="Type your name here..." onChange={handleChange} className={`form-input border border-[#111] p-3 mt-5 w-full focus:rounded-none
+                        ${emptyName ? 'border-red-500' : "border-[#111]"}
+                    `} />
+                    {/* <span className={`ml-2 text-red-500 ${errorName ? 'block' : "hidden"}`}>That name is not valid.</span> */}
+                    <span className={`ml-2 mt-0 self-start text-red-500 ${emptyName ? 'block' : "hidden"}`}>Please enter a name.</span>
 
-                {/* <label>Your name</label> */}
-                <div className="w-full">
-                    <input type="text" value={formData.name} onChange={handleChange} autoComplete='off' name="name" placeholder="Type your name here..." className={`form-input border border-[#111] p-3 w-full focus:rounded-none
-                    ${errorName || emptyName ? 'border-red-500' : "border-[#111]"}`} 
-                    />
-                    <span className={`ml-2 text-red-500 ${errorName ? 'block' : "hidden"}`}>That name is not valid.</span>
-                    <span className={`ml-2 text-red-500 ${emptyName ? 'block' : "hidden"}`}>Please enter a name.</span>
-                </div>
-
-                {/* <label>Message</label> */}
-                <div className="w-full">
-                    <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Type what you want to say..." className={`form-input border border-[#111] p-3 w-full focus:rounded-none
-                    ${emptyMessage ? 'border-red-500' : "border-[#111]"}`} 
-                    />
-                    <span className={`ml-2 text-red-500 ${emptyMessage ? 'block' : "hidden"}`}>You forgot your message.</span>
-                </div>
+                    <textarea name="message" id="message" placeholder="Type what you want to say..." onChange={handleChange} className={`form-input border border-[#111] p-3 mt-5 w-full focus:rounded-none
+                        ${emptyMessage ? 'border-red-500' : "border-[#111]"}
+                    `} />
+                    <span className={`ml-2 mt-0 self-start text-red-500 ${emptyMessage ? 'block' : "hidden"}`}>You forgot your message.</span>
                
-                <button
+                <input
                 type="submit"
-                className="bg-[#222] text-[#fefefe] p-3 m-2 focus:shadow-none hover:bg-[#333] w-full border"
-                >
-                Submit
-                </button>
+                className={`bg-[#222] text-[#fefefe] p-3 m-2 focus:shadow-none hover:bg-[#333] w-full border 
+                    ${isSubmitted ? 'cursor-pointer' : "cursor-wait"}
+                `}
+                value="Submit"
+                />
             </form>
         </div>
 
-        <div className={`${isSubmitted? 'block' : 'hidden'}`}>
+        <div className={`${isSubmitted ? 'hidden' : 'block'}`}>
+            <Loading />  
+        </div>
+        <div className={`${isSubmittedSuccessfully ? 'block' : 'hidden'}`}>
             <Success />  
         </div>
+        <div className={`${isSubmittedFailed ? 'block' : 'hidden'}`}>
+            <Failed />  
+        </div>
       
-        <div className="footer flex justify-center mt-20 sm:hidden">
-            <p>© Phil Cajurao 2023</p>
+        <div className="text-center text-[#111] flex flex-col sm:hidden absolute w-full left-0 bottom-5">
+          <span>© 2023</span>
+          <span>Cris Philip "Phil" Cajurao</span>
         </div>
     </div>
   );

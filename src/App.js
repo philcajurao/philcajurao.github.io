@@ -62,16 +62,16 @@ function App() {
     gsap.fromTo(homeLink, {opacity: 1, }, {opacity: 1,  duration: 1, scrollTrigger: {
       trigger: homeLink
     }});
-    gsap.fromTo(content1, {opacity: 0, }, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content1, {opacity: 0,  }, {opacity: 1,  duration: 2, scrollTrigger: {
       trigger: content1
     }});
-    gsap.fromTo(content2, {opacity: 0, }, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content2, {opacity: 0,  }, {opacity: 1,  duration: 2, scrollTrigger: {
       trigger: content2
     }});
-    gsap.fromTo(content3, {opacity: 0, }, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content3, {opacity: 0,  }, {opacity: 1,  duration: 2, scrollTrigger: {
       trigger: content3
     }});
-    gsap.fromTo(content4, {opacity: 0, }, {opacity: 1,  duration: 3, scrollTrigger: {
+    gsap.fromTo(content4, {opacity: 0,  }, {opacity: 1,  duration: 2, scrollTrigger: {
       trigger: content4
     }});
   }, []);

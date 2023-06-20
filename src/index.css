@@ -113,5 +113,19 @@ code {
   transform: translateY(0);
 }
 
+.spin-animation {
+  animation: spin 7s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 

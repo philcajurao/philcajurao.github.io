@@ -4,6 +4,7 @@ import { MdClose } from "react-icons/md";
 import logo from "../images/favicon.png";
 // import 'react-scroll/dist/react-scroll.css';
 import { Link } from "react-scroll";
+import Footer from "./Footer";
 
 function NavBar() {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -135,11 +136,12 @@ function NavBar() {
           >
             Contacts
           </Link>
-
         </div>
-        <div className="footer bg-[#222] text-[#fefefe] flex justify-center py-10">
-          <p>© Phil Cajurao 2023</p>
+        <div className="text-center text-[#fefefe] flex flex-col">
+          <span>© 2023</span>
+          <span>Cris Philip "Phil" Cajurao</span>
         </div>
+        <div></div>
       </div>
     </div>
   );
