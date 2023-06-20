@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
+import Success from "./Success";
 
 function EmailForm({ handleClose }) {
 
-    const [validated, setValidated] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const [errorEmail, setErrorEmail] = useState(false);
     const [emptyEmail, setEmptyEmail] = useState(false);
@@ -55,6 +56,13 @@ function EmailForm({ handleClose }) {
         })
     }
 
+    const handleSuccessSubmission = () => {
+            setIsSubmitted(true);
+        setTimeout(() => {
+            setIsSubmitted(false);
+        }, 3000);
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
 
@@ -68,6 +76,15 @@ function EmailForm({ handleClose }) {
             setEmptyMessage(true)
         }
 
+        handleSuccessSubmission();
+
+        setFormData(
+            {
+                email: '',
+                name: '',
+                message: ''
+            }
+        )
 
     }
 
@@ -113,6 +130,10 @@ function EmailForm({ handleClose }) {
                 Submit
                 </button>
             </form>
+        </div>
+
+        <div className={`${isSubmitted? 'block' : 'hidden'}`}>
+            <Success />  
         </div>
       
         <div className="footer flex justify-center mt-20 sm:hidden">

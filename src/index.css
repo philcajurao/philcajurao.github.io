@@ -62,19 +62,56 @@ code {
   width: 100%;
   height: 100%;
   background-color: #fefefe;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: all .3s;
   z-index: -1;
 }
 
 .emailBtn:hover::after {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .emailBtn:hover {
   color: #111;
 }
 
- 
+.resumeBtn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  color: #fefefe;
+  border: 1px solid #fefefe;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.resumeBtn::after {
+  content: 'Download';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url('../src/icons/download.png');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-color: #fefefe;
+  transform: translateY(-100%);
+  transition: all .3s;
+  color: #111;
+}
+
+.resumeBtn:hover::after {
+  transform: translateY(0);
+}
+
 
 

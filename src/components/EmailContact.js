@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 import EmailForm from "./EmailForm";
 import Modal from "./Modal";
 
 function EmailContact() {
 
   const [open, setOpen] = useState(false);
+  
 
   const handleClose = () => {
     setOpen(false);

@@ -5,8 +5,8 @@ function Project() {
   return (
     <div>
       {/* <h2 className="text-[#555] text-lg">Projects</h2> */}
-      <div className="grid gap-10 mt-2 text-justify text-[#777]">
-        Projects coming soon.. &#129488;
+      <div className="text-center mt-2 text-[#777]">
+        Projects are coming soon.. &#129488;
         {/* <div className="card text-[#111] p-5 w-full md:flex md:space-x-5">
           <div>
             Project NLA

@@ -21,11 +21,11 @@ function NavBar() {
         </Link>
       </h3>
       <BiMenu
-        size={65}
-        className="cursor-pointer sm:hidden self-center p-5 h-full"
+        size={25}
+        className="cursor-pointer md:hidden self-center py-5 h-full"
         onClick={handleShowSideBar}
       />
-      <ul className="sm:flex hidden font-medium">
+      <ul className="md:flex hidden font-medium">
         <Link
           to="home"
           spy={true}
@@ -40,6 +40,7 @@ function NavBar() {
           to="about"
           spy={true}
           smooth={true}
+          offset={-100}
           duration={1500}
           className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
         >
@@ -85,7 +86,8 @@ function NavBar() {
           <Link
             spy={true}
             smooth={true}
-            duration={2500}
+            offset={-100}
+            duration={1500}
             to="home"
             onClick={handleCloseShowSideBar}
             className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
@@ -97,7 +99,8 @@ function NavBar() {
           <Link
             spy={true}
             smooth={true}
-            duration={2500}
+            offset={-100}
+            duration={1500}
             to="about"
             onClick={handleCloseShowSideBar}
             className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
@@ -109,7 +112,8 @@ function NavBar() {
           <Link
             spy={true}
             smooth={true}
-            duration={2500}
+            offset={-100}
+            duration={1500}
             to="projects"
             onClick={handleCloseShowSideBar}
             className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
@@ -121,7 +125,8 @@ function NavBar() {
           <Link
             spy={true}
             smooth={true}
-            duration={2500}
+            offset={-100}
+            duration={1500}
             to="contacts"
             onClick={handleCloseShowSideBar}
             className="text-center w-full py-5 text-gray-50 hover:bg-[#ddd] duration-300 hover:text-[#222]"
@@ -130,6 +135,7 @@ function NavBar() {
           >
             Contacts
           </Link>
+
         </div>
         <div className="footer bg-[#222] text-[#fefefe] flex justify-center py-10">
           <p>© Phil Cajurao 2023</p>
