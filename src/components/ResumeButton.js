@@ -4,7 +4,7 @@ import Resume from '../files/Internship Resume.pdf'
 function ResumeButton() {
   return (
     <div>
-        <button className='resumeBtn'><a href={Resume} target='_blank' rel="noopener noreferrer">Resume</a></button>
+        <a href={Resume} target='_blank' rel="noopener noreferrer"><button className='resumeBtn'>Resume</button></a>
     </div>
   )
 }
