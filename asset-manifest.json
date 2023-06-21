@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.70781dfa.css",
-    "main.js": "/static/js/main.00d88223.js",
+    "main.css": "/static/css/main.2c86b07c.css",
+    "main.js": "/static/js/main.42643145.js",
+    "static/media/CinemaSeats.png": "/static/media/CinemaSeats.da5d0399b4d363db770e.png",
     "static/media/Internship Resume.pdf": "/static/media/Internship Resume.890002473c8fe1507a74.pdf",
+    "static/media/URSACOnline.png": "/static/media/URSACOnline.b5d6fc4f65ab17101fce.png",
     "static/media/Background.png": "/static/media/Background.b33a50378af4a94d3aca.png",
     "static/media/Phil.png": "/static/media/Phil.c87d66250de09119b7c0.png",
-    "static/media/Church Website.jpeg": "/static/media/Church Website.2b5b1a808dda9459d736.jpeg",
+    "static/media/GurjarMaps.png": "/static/media/GurjarMaps.5dda66a08bb360c22b0b.png",
+    "static/media/Dictionary.png": "/static/media/Dictionary.353b17d6fbd95cc3164c.png",
+    "static/media/canva.png": "/static/media/canva.6986e419531237b8f112.png",
     "static/media/favicon.png": "/static/media/favicon.421f2f755e89fe6d7520.png",
     "static/media/1.png": "/static/media/1.1346f3450ddfbb3a73b1.png",
     "static/media/2.png": "/static/media/2.2d65964f827409af517a.png",
+    "static/media/vscode.png": "/static/media/vscode.a61dc62c499ed3aeefdc.png",
+    "static/media/GreenwichClone.png": "/static/media/GreenwichClone.5159197d4781704be77c.png",
     "static/media/react.png": "/static/media/react.6b33a6ee36ac6f9185cf.png",
+    "static/media/ChurchWebsite.png": "/static/media/ChurchWebsite.ca8853490c39d5499391.png",
+    "static/media/4pics1word.png": "/static/media/4pics1word.4d10a8ec5e000acbe277.png",
     "static/media/php.png": "/static/media/php.9fac170792256b4ca593.png",
     "static/media/java.png": "/static/media/java.3384aae14a7f366aa7b0.png",
     "static/media/tailwind.png": "/static/media/tailwind.b760c5890aa982b4806e.png",
@@ -20,11 +28,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.d93486e26ee76a221f42.png",
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
-    "main.70781dfa.css.map": "/static/css/main.70781dfa.css.map",
-    "main.00d88223.js.map": "/static/js/main.00d88223.js.map"
+    "main.2c86b07c.css.map": "/static/css/main.2c86b07c.css.map",
+    "main.42643145.js.map": "/static/js/main.42643145.js.map"
   },
   "entrypoints": [
-    "static/css/main.70781dfa.css",
-    "static/js/main.00d88223.js"
+    "static/css/main.2c86b07c.css",
+    "static/js/main.42643145.js"
   ]
 }
