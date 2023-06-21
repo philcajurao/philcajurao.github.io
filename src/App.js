@@ -100,11 +100,11 @@ function App() {
         />
       </div>
       {/* motion-safe:animate-translateRight */}
-      <div className="header flex justify-center mt-20 h-[80vh] h-[80svh] ">
+      <div className="header flex justify-center mt-20 h-[80vh] h-[80svh]  ">
         <img
           src={phil}
           alt="Phil"
-          className="w-[32rem] mt-auto mb-[-1px] pointer-events-none drop-shadow-2xl"
+          className="w-[32rem] mt-auto mb-[-1px] pointer-events-none drop-shadow-2xl z-[-1]"
           draggable="false"
         />
       </div>

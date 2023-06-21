@@ -129,7 +129,7 @@ function EmailForm({ handleClose }) {
                 <span className="text-2xl font-medium absolute right-5 top-10 sm:self-end sm:static sm:right-auto sm:top-auto cursor-pointer" onClick={handleClose}>&#10006;</span>
                 <p className="text-2xl font-semibold tracking-wide text-left">Send me an email &#128522;</p>
             </div>
-            <form className="flex flex-col items-center caret-[#111] my-5" ref={form} onSubmit={handleSubmit}>
+            <form className="flex flex-col items-center caret-[#111] mt-5 mb-2" ref={form} onSubmit={handleSubmit}>
                     <input type="email" id="email" autoComplete='off' name="from_email" placeholder="Type your email here..." onChange={handleChange} className={`form-input border p-3 w-full focus:rounded-none
                         ${emptyEmail ? 'border-red-500' : "border-[#111]"}
                     `} />
@@ -157,15 +157,18 @@ function EmailForm({ handleClose }) {
             </form>
         </div>
 
-        <div className={`${isSubmitted ? 'hidden' : 'block'}`}>
-            <Loading />  
+        <div className="mt-[-10px]">
+            <div className={`${isSubmitted ? 'hidden' : 'block'}`}>
+                <Loading />  
+            </div>
+            <div className={`${isSubmittedSuccessfully ? 'block' : 'hidden'}`}>
+                <Success />  
+            </div>
+            <div className={`${isSubmittedFailed ? 'block' : 'hidden'}`}>
+                <Failed />  
+            </div>
         </div>
-        <div className={`${isSubmittedSuccessfully ? 'block' : 'hidden'}`}>
-            <Success />  
-        </div>
-        <div className={`${isSubmittedFailed ? 'block' : 'hidden'}`}>
-            <Failed />  
-        </div>
+        
       
         <div className="text-center text-[#111] flex flex-col sm:hidden absolute w-full left-0 bottom-5">
           <span>© 2023</span>

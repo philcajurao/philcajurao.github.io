@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
-import logo from "../images/favicon.png";
+import logo from "../icons/alt-logo.png";
 // import 'react-scroll/dist/react-scroll.css';
 import { Link } from "react-scroll";
 import Footer from "./Footer";
@@ -31,6 +31,7 @@ function NavBar() {
           to="home"
           spy={true}
           smooth={true}
+          offset={-100}
           duration={1500}
           className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
         >
@@ -52,6 +53,7 @@ function NavBar() {
           to="projects"
           spy={true}
           smooth={true}
+          offset={-100}
           duration={1500}
           className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
         >
@@ -62,6 +64,7 @@ function NavBar() {
           to="contacts"
           spy={true}
           smooth={true}
+          offset={-100}
           duration={1500}
           className="p-5 cursor-pointer transition duration-300 hover:bg-[#111] hover:text-[#fefefe]"
         >
@@ -69,7 +72,7 @@ function NavBar() {
         </Link>
       </ul>
       <div
-        className={`fixed flex flex-col justify-between top-0 left-0 bg-[#222] h-full w-full z-20 duration-1000 ${
+        className={`fixed flex flex-col justify-between top-0 left-0 bg-[#222] h-full w-full z-20 duration-500 ${
           showSideBar ? "translate-y-[-120]" : "translate-y-full"
         }`}
       >
