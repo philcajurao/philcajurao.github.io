@@ -24,7 +24,7 @@ function Project() {
       <h2 className="text-[#fefefe] text-center text-lg">Projects</h2>
 
 
-      <div className="grid grid-cols-1 gap-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2">
 
       <div className="text-[#111] w-full max-w-[400px] mx-auto my-5">
         {/* Card Container */}
@@ -35,11 +35,11 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222]">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
           <div className="my-2">
             Greenwich POS Clone
           </div>
-          <div className="text-sm text-[#777] my-2">
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
               A mimicked Point of Sale System specifically designed for Greenwich, featuring both admin and cashier accounts, based on a cloned Greenwich UI.
           </div>
           <div className="my-4">
@@ -69,11 +69,11 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222]">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
           <div className="my-2">
             Cinema Seats
           </div>
-          <div className="text-sm text-[#777] my-2">
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
             This website serves as a cinema reservation system, enabling users to choose a movie and purchase tickets.
           </div>
           <div className="my-4">
@@ -102,11 +102,11 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222]">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
           <div className="my-2">
             Dictionary
           </div>
-          <div className="text-sm text-[#777] my-2">
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
             Website that is using Free Dictionary API I got from&nbsp;
             <a href="https://publicapis.dev" target='_blank' rel="noopener noreferrer" className="cursor-pointer underline">https://publicapis.dev</a> 
             &nbsp;that makes the dictionary functionable providing informations and even phonetics.
@@ -136,11 +136,11 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222]">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
           <div className="my-2">
             4pics1word
           </div>
-          <div className="text-sm text-[#777] my-2">
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
             An exciting 4 Picture 1 Word game that puts players into guessing of a word by a 4 picture given the set of letters they have and congratulate them in the end.
           </div>
           <div className="my-4">
@@ -167,11 +167,11 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222]">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
           <div className="my-2">
             Church Landing Page
           </div>
-          <div className="text-sm text-[#777] my-2">
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
             Landing website for a modern church featuring their gatherings, ministries and other informations.
           </div>
           <div className="my-4">
@@ -200,11 +200,11 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222]">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
           <div className="my-2">
             Gurjar Maps
           </div>
-          <div className="text-sm text-[#777] my-2">
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
             A system where you can find gurjar people and their basic info around the world built using React-Leaflet, OpenStreetMap and Maptiler for the map's layer.
           </div>
           <div className="my-4">
@@ -234,11 +234,11 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222]">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
           <div className="my-2">
             URSAC Online
           </div>
-          <div className="text-sm text-[#777] my-2">
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
             A Learning Management System for University of Rizal System Antipolo Campus, capable of creating and joining course subjects created by users and post announcements or activities with an option of having pdf file
             on attachment. Users can edit their details such us profile photo, password, and basic info. Registration of users can only be done by the website's administration page.
           </div>
@@ -260,9 +260,10 @@ function Project() {
           </div>
         </div>
       </div>
+      
+      </div>
       <div className="text-[#777] my-5 text-center">
         More projects are coming soon... &#129488;
-      </div>
       </div>
     </div>
   );

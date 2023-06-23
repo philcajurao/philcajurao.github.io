@@ -28,7 +28,7 @@ function Skills() {
             <li><img src={muiLogo} alt='MUI Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li>
             <li className='flex items-center'><img src={materializeLogo} alt='Materialize Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li>
             <li><img src={phpLogo} alt='PHP Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li>
-            <li><img src={javaLogo} alt='Java Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li>
+            {/* <li><img src={javaLogo} alt='Java Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li> */}
             <li><img src={mysqlLogo} alt='MySQL Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li>
             <li><img src={apiLogo} alt='API Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li>
             <li><img src={vscodeLogo} alt='VSCode Logo' className='w-12 sm:w-16 h-auto mx-auto' /></li>

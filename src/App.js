@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import phil from "./images/Phil.png";
 import bg from "./images/Background.png";
@@ -11,9 +11,14 @@ import NavBar from "./components/NavBar";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import EmailContact from "./components/EmailContact";
+import LoadingPage from "./components/LoadingPage";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
+
   const handleContextMenu = (e) => {
     e.preventDefault();
   };
@@ -74,6 +79,16 @@ function App() {
     gsap.fromTo(content4, {opacity: 0,  }, {opacity: 1,  duration: 2, scrollTrigger: {
       trigger: content4
     }});
+
+
+    setTimeout(() => {
+      setIsLoaded(true);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 10000);
+    }, 0);
+
+
   }, []);
   return (
     <div
@@ -82,36 +97,46 @@ function App() {
       onDoubleClick={handleDoubleClick}
       onKeyDown={handleKeyDown}
     >
-      <NavBar />
+      {
+        isLoaded &&
 
-      <div id="home" className="absolute inset-0 z-[-1] overflow-hidden">
-        {/* <img src={bg} alt="Background" className="w-full h-full object-cover" /> */}
-        <img
-          src={bg1}
-          alt="Background1"
-          ref={backG1}
-          className="w-full h-full object-cover absolute "
-        />
-        <img
-          src={bg2}
-          alt="Background2"
-          ref={backG2}
-          className="w-full h-full object-cover absolute "
-        />
-      </div>
-      {/* motion-safe:animate-translateRight */}
-      <div className="header flex justify-center mt-20 h-[80vh] h-[80svh]  ">
-        <img
-          src={phil}
-          alt="Phil"
-          className="w-[32rem] mt-auto mb-[-1px] pointer-events-none drop-shadow-2xl z-[-1]"
-          draggable="false"
-        />
-      </div>
+        <div>
+          <NavBar />
 
-      <Content cont1={cont1} cont2={cont2} cont3={cont3} cont4={cont4} />
+          <div id="home" className="absolute inset-0 z-[-1] overflow-hidden">
+            {/* <img src={bg} alt="Background" className="w-full h-full object-cover" /> */}
+            <img
+              src={bg1}
+              alt="Background1"
+              ref={backG1}
+              className="w-full h-full object-cover absolute "
+            />
+            <img
+              src={bg2}
+              alt="Background2"
+              ref={backG2}
+              className="w-full h-full object-cover absolute "
+            />
+          </div>
+          {/* motion-safe:animate-translateRight */}
+          <div className="header flex justify-center mt-20 h-[80vh] h-[80svh]  ">
+            <img
+              src={phil}
+              alt="Phil"
+              className="w-[32rem] mt-auto mb-[-1px] pointer-events-none drop-shadow-2xl z-[-1]"
+              draggable="false"
+            />
+          </div>
 
-      <Footer />
+          <Content cont1={cont1} cont2={cont2} cont3={cont3} cont4={cont4} />
+
+          <Footer />
+        </div>
+      }
+      
+      
+
+      <LoadingPage isLoading={isLoading} />
     </div>
   );
 }
