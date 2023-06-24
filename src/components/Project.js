@@ -35,7 +35,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
           <div className="my-2">
             Greenwich POS Clone
           </div>
@@ -69,7 +69,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
           <div className="my-2">
             Cinema Seats
           </div>
@@ -102,7 +102,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
           <div className="my-2">
             Dictionary
           </div>
@@ -136,7 +136,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
           <div className="my-2">
             4pics1word
           </div>
@@ -167,7 +167,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
           <div className="my-2">
             Church Landing Page
           </div>
@@ -200,7 +200,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
           <div className="my-2">
             Gurjar Maps
           </div>
@@ -234,7 +234,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-96">
+        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
           <div className="my-2">
             URSAC Online
           </div>
