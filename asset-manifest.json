@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.24af626c.css",
-    "main.js": "/static/js/main.cd597802.js",
+    "main.css": "/static/css/main.114beff5.css",
+    "main.js": "/static/js/main.a44ad05f.js",
     "static/media/CinemaSeats.png": "/static/media/CinemaSeats.da5d0399b4d363db770e.png",
     "static/media/Internship Resume.pdf": "/static/media/Internship Resume.890002473c8fe1507a74.pdf",
     "static/media/URSACOnline.png": "/static/media/URSACOnline.b5d6fc4f65ab17101fce.png",
@@ -28,11 +28,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.d93486e26ee76a221f42.png",
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
-    "main.24af626c.css.map": "/static/css/main.24af626c.css.map",
-    "main.cd597802.js.map": "/static/js/main.cd597802.js.map"
+    "main.114beff5.css.map": "/static/css/main.114beff5.css.map",
+    "main.a44ad05f.js.map": "/static/js/main.a44ad05f.js.map"
   },
   "entrypoints": [
-    "static/css/main.24af626c.css",
-    "static/js/main.cd597802.js"
+    "static/css/main.114beff5.css",
+    "static/js/main.a44ad05f.js"
   ]
 }
