@@ -169,11 +169,6 @@ function EmailForm({ handleClose }) {
             </div>
         </div>
         
-      
-        <div className="text-center text-[#111] flex flex-col sm:hidden absolute w-full left-0 bottom-5">
-          <span>© 2023</span>
-          <span>Cris Philip "Phil" Cajurao</span>
-        </div>
     </div>
   );
 }

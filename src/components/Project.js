@@ -35,7 +35,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
           <div className="my-2">
             Greenwich POS Clone
           </div>
@@ -53,7 +53,7 @@ function Project() {
                 <li><img src={mysqlLogo} alt='MySQL Logo' className='m-1 w-8 h-5' /></li>
             </ul>
           </div>
-          <div className="mt-10 mb-2 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
             <button className="emailBtn">Demo</button>
           </div>
@@ -69,7 +69,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
           <div className="my-2">
             Cinema Seats
           </div>
@@ -86,7 +86,7 @@ function Project() {
                 <li><img src={mysqlLogo} alt='MySQL Logo' className='m-1 w-8 h-5' /></li>
             </ul>
           </div>
-          <div className="mt-10 mb-2 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly justify-evenly">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
             <button className="emailBtn">Demo</button>
           </div>
@@ -102,7 +102,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
           <div className="my-2">
             Dictionary
           </div>
@@ -120,7 +120,7 @@ function Project() {
                 <li><img src={apiLogo} alt='API Logo' className='m-1 w-5 h-5' /></li>
             </ul>
           </div>
-          <div className="mt-10 mb-2 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly justify-evenly">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
             <button className="emailBtn">Demo</button>
           </div>
@@ -136,7 +136,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
           <div className="my-2">
             4pics1word
           </div>
@@ -151,7 +151,7 @@ function Project() {
                 <li><img src={jsLogo} alt='JS Logo' className='m-1 w-5 h-5' /></li>
             </ul>
           </div>
-          <div className="mt-10 mb-2 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly justify-evenly">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
             <button className="emailBtn">Demo</button>
           </div>
@@ -167,7 +167,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
           <div className="my-2">
             Church Landing Page
           </div>
@@ -184,7 +184,7 @@ function Project() {
                 <li><img src={muiLogo} alt='MUI Logo' className='m-1 w-5 h-5' /></li>
             </ul>
           </div>
-          <div className="mt-10 mb-2 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly justify-evenly">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
             <button className="emailBtn">Demo</button>
           </div>
@@ -200,7 +200,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
           <div className="my-2">
             Gurjar Maps
           </div>
@@ -218,7 +218,7 @@ function Project() {
                 <li><img src={apiLogo} alt='API Logo' className='m-1 w-5 h-5' /></li>
             </ul>
           </div>
-          <div className="mt-10 mb-2 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly justify-evenly">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
             <button className="emailBtn">Demo</button>
           </div>
@@ -234,7 +234,7 @@ function Project() {
           />
         </div>
         {/* Card Content */}
-        <div className="text-[#fefefe] p-5 bg-[#222] h-auto">
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
           <div className="my-2">
             URSAC Online
           </div>
@@ -254,7 +254,7 @@ function Project() {
                 <li><img src={mysqlLogo} alt='Java Logo' className='m-1 w-8 h-5' /></li>
             </ul>
           </div>
-          <div className="mt-10 mb-2 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly justify-evenly">
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
             <button className="emailBtn">Demo</button>
           </div>

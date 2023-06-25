@@ -11,7 +11,7 @@ function Modal({ open, handleClose, children }) {
     `}
     >
       <div
-        className={`p-5 bg-[#fefefe] shadow-xl w-full sm:max-w-[50vw] sm:h-auto mx-auto h-[100vh] sm:border transition-all duration-500 sm:duration-300 
+        className={`p-5 bg-[#fefefe] shadow-xl w-full flex flex-col sm:max-w-[50vw] sm:h-auto mx-auto h-[100vh] sm:border transition-all duration-500 sm:duration-300 
         ${
           open
             ? "sm:scale-100 sm:opacity-100 translate-y-0"
@@ -20,6 +20,12 @@ function Modal({ open, handleClose, children }) {
         onClick={(e) => e.stopPropagation()}
       >
         {children}
+        
+      
+        <div className="text-center text-[#111] flex flex-col sm:hidden my-auto">
+          <span>© 2023</span>
+          <span>Cris Philip "Phil" Cajurao</span>
+        </div>
       </div>
     </div>
   );

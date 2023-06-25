@@ -80,14 +80,9 @@ function App() {
       trigger: content4
     }});
 
-
-    setTimeout(() => {
-      setIsLoaded(true);
       setTimeout(() => {
         setIsLoading(false);
       }, 10000);
-    }, 0);
-
 
   }, []);
   return (
@@ -97,10 +92,6 @@ function App() {
       onDoubleClick={handleDoubleClick}
       onKeyDown={handleKeyDown}
     >
-      {
-        isLoaded &&
-
-        <div>
           <NavBar />
 
           <div id="home" className="absolute inset-0 z-[-1] overflow-hidden">
@@ -131,8 +122,6 @@ function App() {
           <Content cont1={cont1} cont2={cont2} cont3={cont3} cont4={cont4} />
 
           <Footer />
-        </div>
-      }
       
       
 
