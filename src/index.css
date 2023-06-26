@@ -17,6 +17,7 @@ body {
   -ms-user-select: none; /* Internet Explorer */
   -webkit-user-select: none; /* Safari and Chrome */
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 code {

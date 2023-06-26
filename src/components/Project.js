@@ -122,7 +122,7 @@ function Project() {
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
-            <button className="emailBtn">Demo</button>
+            <a href="https://tourmaline-gumption-e52c40.netlify.app/" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@ function Project() {
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
-            <button className="emailBtn">Demo</button>
+            <a href="https://zingy-basbousa-10d97d.netlify.app/" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
           </div>
         </div>
       </div>
@@ -186,7 +186,7 @@ function Project() {
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
-            <button className="emailBtn">Demo</button>
+            <a href="https://verdant-licorice-983fe5.netlify.app" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
           </div>
         </div>
       </div>
@@ -220,7 +220,7 @@ function Project() {
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
-            <button className="emailBtn">Demo</button>
+            <a href="https://rainbow-kataifi-337b7f.netlify.app" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
           </div>
         </div>
       </div>
@@ -256,7 +256,7 @@ function Project() {
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
             <button className="emailBtn">Code</button>
-            <button className="emailBtn">Demo</button>
+            <a href="https://www.ursaconline.com" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
           </div>
         </div>
       </div>
