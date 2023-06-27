@@ -10,7 +10,7 @@ function Content({ cont1, cont2, cont3, cont4 }) {
       <div className="text-[#fefefe] flex flex-col max-w-[85vw] mx-auto space-y-32">
         <div className="flex flex-col items-center mt-2">
           <h1 className="font-bold text-xl">PHIL CAJURAO</h1>
-          <p className="">&lt;p&gt;Aspiring Developer&lt;/p&gt;</p>
+          <p className="">&lt;p&gt;Front End Developer&lt;/p&gt;</p>
         </div>
         <div ref={cont1}>
           <div id="about"></div>

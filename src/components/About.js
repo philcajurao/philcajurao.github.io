@@ -8,7 +8,7 @@ function About() {
       <div className="flex flex-col space-y-5 mt-2 text-justify text-[#777]">
         <p className="">
           Hi! My name's <b>Phil</b>, currently a graduating college student
-          aspiring to be a great developer. I've met programming in an
+          based in the Philippines. I've met programming in an
           interesting and unusual way that brought me wanting to know it more.
         </p>
         <p className="">
