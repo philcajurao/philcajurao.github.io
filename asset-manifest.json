@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.afcd6720.css",
-    "main.js": "/static/js/main.b49207b0.js",
+    "main.js": "/static/js/main.ba8a8162.js",
     "static/media/CinemaSeats.png": "/static/media/CinemaSeats.da5d0399b4d363db770e.png",
     "static/media/Internship Resume.pdf": "/static/media/Internship Resume.890002473c8fe1507a74.pdf",
     "static/media/URSACOnline.png": "/static/media/URSACOnline.b5d6fc4f65ab17101fce.png",
@@ -29,10 +29,10 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
     "main.afcd6720.css.map": "/static/css/main.afcd6720.css.map",
-    "main.b49207b0.js.map": "/static/js/main.b49207b0.js.map"
+    "main.ba8a8162.js.map": "/static/js/main.ba8a8162.js.map"
   },
   "entrypoints": [
     "static/css/main.afcd6720.css",
-    "static/js/main.b49207b0.js"
+    "static/js/main.ba8a8162.js"
   ]
 }
