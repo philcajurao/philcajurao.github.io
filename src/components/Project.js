@@ -5,6 +5,7 @@ import churchsite from "../images/ChurchWebsite.png";
 import cinemaseats from "../images/CinemaSeats.png";
 import dictionary from "../images/Dictionary.png";
 import greenwichclone from "../images/GreenwichClone.png";
+import employeedatabase from "../images/EmployeeDatabase.png";
 import gurjarmaps from "../images/GurjarMaps.png";
 import reactLogo from '../icons/react.png'
 import htmlLogo from '../icons/html.png'
@@ -54,8 +55,8 @@ function Project() {
             </ul>
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
-            <a href="https://github.com/philcajurao/greenwich-pos-clone.git" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Code</button></a>
-            <a href="#"><button className="emailBtn">Demo</button></a>
+            <a href="https://github.com/philcajurao/greenwich-pos-clone.git" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
+            {/* <a href="#"><button className="emailBtn w-full">Demo</button></a> */}
           </div>
         </div>
       </div>
@@ -87,8 +88,8 @@ function Project() {
             </ul>
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
-            <a href="https://github.com/philcajurao/cinema-seats.git" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Code</button></a>
-            <a href="#"><button className="emailBtn">Demo</button></a>
+            <a href="https://github.com/philcajurao/cinema-seats.git" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
+            {/* <a href="#"><button className="emailBtn w-full">Demo</button></a> */}
           </div>
         </div>
       </div>
@@ -121,8 +122,8 @@ function Project() {
             </ul>
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
-            <a href="https://github.com/philcajurao/dictionary.git" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Code</button></a>
-            <a href="https://tourmaline-gumption-e52c40.netlify.app/" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
+            <a href="https://github.com/philcajurao/dictionary.git" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
+            <a href="https://tourmaline-gumption-e52c40.netlify.app/" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Demo</button></a>
           </div>
         </div>
       </div>
@@ -152,8 +153,8 @@ function Project() {
             </ul>
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
-            <a href="https://github.com/philcajurao/4pics1word.git" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Code</button></a>
-            <a href="https://zingy-basbousa-10d97d.netlify.app/" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
+            <a href="https://github.com/philcajurao/4pics1word.git" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
+            <a href="https://zingy-basbousa-10d97d.netlify.app/" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Demo</button></a>
           </div>
         </div>
       </div>
@@ -185,8 +186,8 @@ function Project() {
             </ul>
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
-            <a href="https://github.com/philcajurao/church-landing-page.git" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Code</button></a>
-            <a href="https://verdant-licorice-983fe5.netlify.app" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
+            <a href="https://github.com/philcajurao/church-landing-page.git" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
+            <a href="https://verdant-licorice-983fe5.netlify.app" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Demo</button></a>
           </div>
         </div>
       </div>
@@ -219,8 +220,8 @@ function Project() {
             </ul>
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
-            <a href="https://github.com/RinaCLDS/Big-project.git" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Code</button></a>
-            <a href="https://rainbow-kataifi-337b7f.netlify.app" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
+            <a href="https://github.com/RinaCLDS/Big-project.git" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
+            <a href="https://rainbow-kataifi-337b7f.netlify.app" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Demo</button></a>
           </div>
         </div>
       </div>
@@ -255,8 +256,39 @@ function Project() {
             </ul>
           </div>
           <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
-            <a href="#"><button className="emailBtn">Code</button></a>
-            <a href="https://www.ursaconline.com" target='_blank' rel="noopener noreferrer"><button className="emailBtn">Demo</button></a>
+            <a href="#" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
+            <a href="https://www.ursaconline.com" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Demo</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-[#111] w-full max-w-[400px] mx-auto my-5">
+        {/* Card Container */}
+        <div className="">
+          <img
+          className="border"
+            src={employeedatabase}
+            alt="Employee Database Logo"
+          />
+        </div>
+        {/* Card Content */}
+        <div className="text-[#fefefe] flex flex-col p-5 bg-[#222] h-[30rem]">
+          <div className="my-2">
+            Employee Database
+          </div>
+          <div className="text-sm text-[#777] my-2 h-24 overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
+            A Learning Management System for University of Rizal System Antipolo Campus, capable of creating and joining course subjects created by users and post announcements or activities with an option of having pdf file
+            on attachment. Users can edit their details such us profile photo, password, and basic info. Registration of users can only be done by the website's administration page.
+          </div>
+          <div className="my-4">
+            Tech Stack
+            <ul className='flex flex-wrap mt-1'>
+                <li><img src={javaLogo} alt='Java Logo' className='m-1 w-5 h-5' /></li>
+                <li><img src={mysqlLogo} alt='MySQL Logo' className='m-1 w-8 h-5' /></li>
+            </ul>
+          </div>
+          <div className="mt-10 mb-10 flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-evenly sm:mt-auto">
+            <a href="https://github.com/philcajurao/employee-database.git" target='_blank' rel="noopener noreferrer" className="sm:w-auto w-full"><button className="emailBtn w-full">Code</button></a>
           </div>
         </div>
       </div>
