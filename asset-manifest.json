@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.afcd6720.css",
-    "main.js": "/static/js/main.ba8a8162.js",
+    "main.css": "/static/css/main.f94cfebd.css",
+    "main.js": "/static/js/main.a17b6bab.js",
     "static/media/CinemaSeats.png": "/static/media/CinemaSeats.da5d0399b4d363db770e.png",
     "static/media/Internship Resume.pdf": "/static/media/Internship Resume.890002473c8fe1507a74.pdf",
     "static/media/URSACOnline.png": "/static/media/URSACOnline.b5d6fc4f65ab17101fce.png",
@@ -17,6 +17,7 @@
     "static/media/react.png": "/static/media/react.6b33a6ee36ac6f9185cf.png",
     "static/media/ChurchWebsite.png": "/static/media/ChurchWebsite.ca8853490c39d5499391.png",
     "static/media/alt-logo.png": "/static/media/alt-logo.85a5d55e762b0e22b4e5.png",
+    "static/media/EmployeeDatabase.png": "/static/media/EmployeeDatabase.71cc1b62fb6a2218b2d8.png",
     "static/media/4pics1word.png": "/static/media/4pics1word.4d10a8ec5e000acbe277.png",
     "static/media/php.png": "/static/media/php.9fac170792256b4ca593.png",
     "static/media/java.png": "/static/media/java.3384aae14a7f366aa7b0.png",
@@ -28,11 +29,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.d93486e26ee76a221f42.png",
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
-    "main.afcd6720.css.map": "/static/css/main.afcd6720.css.map",
-    "main.ba8a8162.js.map": "/static/js/main.ba8a8162.js.map"
+    "main.f94cfebd.css.map": "/static/css/main.f94cfebd.css.map",
+    "main.a17b6bab.js.map": "/static/js/main.a17b6bab.js.map"
   },
   "entrypoints": [
-    "static/css/main.afcd6720.css",
-    "static/js/main.ba8a8162.js"
+    "static/css/main.f94cfebd.css",
+    "static/js/main.a17b6bab.js"
   ]
 }
