@@ -266,7 +266,7 @@ function Project() {
         {/* Card Container */}
         <div className="">
           <img
-          className="border"
+          className=""
             src={employeedatabase}
             alt="Employee Database Logo"
           />
@@ -277,9 +277,9 @@ function Project() {
             Employee Database
           </div>
           <div className="text-sm text-[#777] my-2 h-24 overflow-y-auto scrollbar scrollbar-thin scrollbar-thumb-[#1a1a1a] scrollbar-track-[rgba(255,255,255,0.1)]">
-            A Learning Management System for University of Rizal System Antipolo Campus, capable of creating and joining course subjects created by users and post announcements or activities with an option of having pdf file
-            on attachment. Users can edit their details such us profile photo, password, and basic info. Registration of users can only be done by the website's administration page.
-          </div>
+           A basic management system for employees where you can manage their data by editing, deleting, and adding new employee. You can also view all the employees by the table 
+           and can navigate with next and previous buttons. Built using Netbeans and Java Swing.
+           </div>
           <div className="my-4">
             Tech Stack
             <ul className='flex flex-wrap mt-1'>
