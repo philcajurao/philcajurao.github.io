@@ -6,7 +6,7 @@ const Footer = () => {
                     <span>Copyright © {new Date().getFullYear()} &nbsp;</span>
                     <span className="hidden sm:block">-</span>
                     <span>&nbsp;Made with ❤️ by &nbsp;
-                        <span className="border p-1">philcajurao.</span>
+                        <span className="border p-1 cursor-default">philcajurao.</span>
                     </span>
                 </p>
             </aside>
