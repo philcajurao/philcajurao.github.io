@@ -19,10 +19,10 @@ const DrawerWrap = ({ children }) => {
                     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
 
                     <ul className="menu menu-md bg-base-200 text-base-content min-h-full w-80 p-4">
-                        <li><Link onClick={handleIsCheckedChange} to='section0' smooth={true} offset={-700} className='rounded'>Home</Link></li>
-                        <li><Link onClick={handleIsCheckedChange} to='section1' smooth={true} className='rounded'>About</Link></li>
-                        <li><Link onClick={handleIsCheckedChange} to='section2' smooth={true} className='rounded'>Projects</Link></li>
-                        <li><Link onClick={handleIsCheckedChange} to='section3' smooth={true} className='rounded'>Contacts</Link></li>
+                        <li><Link onClick={handleIsCheckedChange} to='section0' smooth={true} offset={-700} className='rounded py-4 text-3xl'>Home</Link></li>
+                        <li><Link onClick={handleIsCheckedChange} to='section1' smooth={true} className='rounded py-4 text-3xl'>About</Link></li>
+                        <li><Link onClick={handleIsCheckedChange} to='section2' smooth={true} className='rounded py-4 text-3xl'>Projects</Link></li>
+                        <li><Link onClick={handleIsCheckedChange} to='section3' smooth={true} className='rounded py-4 text-3xl'>Contacts</Link></li>
                     </ul>
 
                 </div>
