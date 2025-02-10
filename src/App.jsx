@@ -1,11 +1,11 @@
-import About from "./sections.jsx/About"
+import About from "./sections/About"
 import NavBar from "./layouts/NavBar"
 import DrawerWrap from "./layouts/DrawerWrap"
 import Section from "./layouts/Section"
-import Hero from "./sections.jsx/Hero"
+import Hero from "./sections/Hero"
 import Footer from "./layouts/Footer"
-import Projects from "./sections.jsx/Projects"
-import Contacts from "./sections.jsx/Contacts"
+import Projects from "./sections/Projects"
+import Contacts from "./sections/Contacts"
 import TechStacks from "./components/TechStacks"
 
 function App() {
