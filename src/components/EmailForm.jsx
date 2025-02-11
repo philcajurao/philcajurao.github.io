@@ -157,7 +157,7 @@ const EmailForm = () => {
                     <div className={`transition duration-0 tooltip tooltip-error tooltip-open ${formData.message.isValid ? "opacity-0" : "opacity-100"}`} data-tip={formData.message.errorMessage} />
                     <textarea name="message" value={formData.message.value} onChange={handleFormChange}
                         className={`textarea ${!formData.message.isValid ? "border-error" : "border-base-content/75"} text-base rounded w-full max-w-lg`} rows={8}
-                        placeholder="Type your email here"
+                        placeholder="Type your message here"
                     />
                 </div>
             </div>

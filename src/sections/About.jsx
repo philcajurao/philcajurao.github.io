@@ -11,8 +11,8 @@ const About = () => {
           {/* <div className="border mb-4 p-1">
           <img src={dp} alt="" className="w-full max-h-[120px]" />
         </div> */}
-          <p className="text-base-content/60">
-            Take a look on my Resume by clicking this button.
+          <p className="text-base-content/80 font-light">
+            Take a look at my Resume by clicking this button.
           </p>
           <a href={Resume} download target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-lg space-x-2 mt-8 bg-base-300 py-3 w-full max-w-[12rem] text-center border transition-all duration-300 cursor-pointer hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-[4px_4px_0px_white]">
             <span>Download</span>
@@ -45,10 +45,10 @@ const About = () => {
         </div>
 
         <div className="text-2xl lg:col-span-2 border p-8 bg-base-100 flex justify-center items-center">
-          <p className="text-base-content/60">
-            <span className="font-semibold text-base-content/100">Web design is my passion. &nbsp;</span>
+          <p className="text-base-content/80 font-light">
+            <span className="bg-base-content font-normal text-primary px-1">Web design is my passion.</span>&nbsp;
             I enjoy building a simple, clean and smooth websites like this one.
-            Apart from that, expanding my knowledge through experimenting and learning new technologies are so important to me
+            Apart from that, expanding my knowledge through experimenting and learning new technologies are so important
             to keep a fresh perspective.
           </p>
         </div>

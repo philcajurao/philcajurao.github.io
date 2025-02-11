@@ -1,6 +1,5 @@
 import mysql from "../assets/techstacks/mysql.png"
 import ghl from "../assets/techstacks/ghl.png"
-import { motion } from "motion/react"
 
 
 
@@ -11,68 +10,54 @@ import { SiMui, SiPhp } from "react-icons/si";
 
 const TechStacks = () => {
   return (
-    <div className="overflow-x-hidden py-32">
-        <motion.div className="w-screen flex justify-between space-x-8"
-          animate={{ x: ['-100%', '101%'] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: 'loop',
-            duration: 20,
-            ease: 'linear',
-          }}
-        >
-          <div className="text-[#3858E9] text-7xl">
-            {/* <img src={logo} alt="" className="w-full max-h-[25px]" /> */}
+    <div className="w-full mx-auto px-4 py-32">
+      <div className="flex flex-col items-center">
+        <h2 className="text-center text-2xl font-semibold mb-16">Technologies I recently used</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+          <div className="border p-12 hover:bg-base-content hover:text-[#3858E9] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">Wordpress</p>
             <FaWordpress />
           </div>
-          <div>
-            <img src={ghl} alt="ghl" className="w-[4.5rem] h-[4.5rem]" />
+          <div className="border hover:bg-base-content group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">GoHighLevel</p>
+            <img src={ghl} alt="ghl" className="w-[4.5rem] h-[4.5rem] grayscale group-hover:grayscale-0 transition-all" />
           </div>
-          <div className="text-[#4F5B93] text-7xl">
-            {/* <img src={react} alt="" className="w-full max-h-[25px]" /> */}
-            <SiPhp />
+          <div className="border p-12 hover:bg-base-content hover:text-[#4F5B93] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">PHP</p>
+            <SiPhp className="" />
           </div>
-          <div className="text-[#53c1de] text-7xl">
-            {/* <img src={react} alt="" className="w-full max-h-[25px]" /> */}
-            <FaReact />
+          <div className="border p-12 hover:bg-base-content hover:text-[#53c1de] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">React</p>
+            <FaReact className="" />
           </div>
-          <div className="">
-            <img src={mysql} alt="" className="w-full max-w-[100px]" />
+          <div className="border hover:bg-base-content group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">MySQL</p>
+            <img src={mysql} alt="" className="w-full max-w-[100px] grayscale group-hover:grayscale-0 transition-all" />
           </div>
-          <div className="text-[#F44D27] text-7xl">
-            {/* <img src={react} alt="" className="w-full max-h-[25px]" /> */}
-            <FaGitAlt />
+          <div className="border p-12 hover:bg-base-content hover:text-[#F44D27] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">Git</p>
+            <FaGitAlt className="" />
           </div>
-        </motion.div>
 
-
-        <motion.div className="w-screen flex justify-between items-center mt-16 space-x-8"
-          animate={{ x: ['100%', '-101%'] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: 'loop',
-            duration: 20,
-            ease: 'linear',
-          }}
-        >
-
-          <div className="text-[#ffc107] text-7xl">
-            {/* <img src={react} alt="" className="w-full max-h-[25px]" /> */}
-            <FaJs />
+          <div className="border p-12 hover:bg-base-content hover:text-[#F7BB00] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">JavaScript</p>
+            <FaJs className="" />
           </div>
-          <div className="text-[#f16529] text-7xl">
-            {/* <img src={react} alt="" className="w-full max-h-[25px]" /> */}
-            <FaHtml5 />
+          <div className="border p-12 hover:bg-base-content hover:text-[#f16529] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">HTML</p>
+            <FaHtml5 className="" />
           </div>
-          <div className="text-[#1572B6] text-7xl">
-            {/* <img src={logo} alt="" className="w-full max-h-[25px]" /> */}
-            <FaCss3Alt />
+          <div className="border p-12 hover:bg-base-content hover:text-[#1572B6] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">CSS</p>
+            <FaCss3Alt className="" />
           </div>
-          <div className="text-[#007FFF] text-7xl">
-            <SiMui />
+          <div className="border p-12 hover:bg-base-content hover:text-[#007FFF] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">MUI</p>
+            <SiMui className="" />
           </div>
-          <div>
-            <svg className="w-[4.5rem] h-[4.5rem]" viewBox="0 0 256 404" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+          <div className="border hover:bg-base-content group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">DaisyUI</p>
+            <svg className="w-[4.5rem] h-[4.5rem] grayscale group-hover:grayscale-0 transition-all" viewBox="0 0 256 404" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
               <title>daisyUI</title>
               <g>
                 <path d="M66.406015,280.753083 L189.593985,280.753083 C223.611404,280.753083 251.18797,308.329649 251.18797,342.347068 C251.18797,376.364486 223.611404,403.941053 189.593985,403.941053 L66.406015,403.941053 C32.3885965,403.941053 4.81203008,376.364486 4.81203008,342.347068 C4.81203008,308.329649 32.3885965,280.753083 66.406015,280.753083 Z" fill="#1AD1A5"></path>
@@ -82,12 +67,13 @@ const TechStacks = () => {
               </g>
             </svg>
           </div>
-          <div className="text-[#38BDF8] text-7xl">
-            {/* <img src={react} alt="" className="w-full max-h-[25px]" /> */}
-            <RiTailwindCssFill />
+          <div className="border p-12 hover:bg-base-content hover:text-[#38BDF8] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">Tailwind</p>
+            <RiTailwindCssFill className="" />
           </div>
-        </motion.div>
+        </div>
       </div>
+    </div>
   );
 }
 

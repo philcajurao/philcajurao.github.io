@@ -6,8 +6,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 const Projects = () => {
   return (
-    <div className="h-full px-4 pb-16">
-      <h3 className="text-4xl text-center mb-16">Projects</h3>
+    <div className="h-full px-4 py-16">
+      <h3 className="text-2xl font-semibold text-center mb-16">Projects</h3>
 
       <div className="grid lg:grid-cols-2 w-full place-items-center gap-8">
         <div className="card border max-w-md overflow-y-hidden">
