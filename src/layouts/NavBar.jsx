@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 const NavBar = () => {
     return (
-        <div className="navbar px-4 py-0 h-20">
+        <div className="navbar px-8 py-0 h-20">
 
 
             <div className="navbar-start">
