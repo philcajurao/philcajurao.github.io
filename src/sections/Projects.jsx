@@ -15,8 +15,8 @@ const Projects = () => {
 
 
 
-      <div className="grid lg:grid-cols-2 w-full place-items-stretch gap-8">
-        <div className="card border max-w-md overflow-y-hidden mx-auto">
+      <div className="grid lg:grid-cols-2 w-full gap-16 place-items-center lg:place-items-start">
+        <div className="card border max-w-xl overflow-y-hidden lg:place-self-end">
           <figure>
             <img
               src={ie}
@@ -24,7 +24,7 @@ const Projects = () => {
               className="h-full border-b  border-neutral/50"
             />
           </figure>
-          <div className="card-body">
+          <div className="card-body h-[300px]">
             <h2 className="card-title">Insurance Enterprise USA</h2>
             <p className="leading-4 text-sm text-base-content/80">Insurance website with quote & enroll feature.</p>
 
@@ -47,7 +47,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="card-actions mt-8 justify-start sm:justify-end space-x-2">
+            <div className="card-actions lg:absolute lg:right-8 lg:bottom-8 lg:w-full mt-8 justify-start sm:justify-end space-x-2">
               {/* <a href="https://www.insuranceenterpriseusa.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-base-300 p-3 text-center border transition-all duration-300 cursor-pointer hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-[2px_2px_0px_white]">
                 <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14" />
@@ -64,7 +64,7 @@ const Projects = () => {
 
 
 
-        <div className="card border max-w-md overflow-y-hidden mx-auto">
+        <div className="card border max-w-xl overflow-y-hidden">
           <figure>
             <img
               src={fts}
@@ -72,7 +72,7 @@ const Projects = () => {
               className="h-full border-b  border-neutral/50"
             />
           </figure>
-          <div className="card-body">
+          <div className="card-body h-[300px]">
             <h2 className="card-title">Fortune Tech Solutions</h2>
             <p className="leading-4 text-sm text-base-content/80">Business-focused site offering IT services.</p>
 
@@ -101,7 +101,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="card-actions mt-8 justify-start sm:justify-end space-x-2">
+            <div className="card-actions lg:absolute lg:right-8 lg:bottom-8 lg:w-full mt-8 justify-start sm:justify-end space-x-2">
               {/* <a href="https://www.insuranceenterpriseusa.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-base-300 p-3 text-center border transition-all duration-300 cursor-pointer hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-[2px_2px_0px_white]">
                 <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14" />
@@ -117,7 +117,7 @@ const Projects = () => {
         </div>
 
 
-        <div className="card border max-w-md overflow-y-hidden mx-auto">
+        <div className="card border max-w-xl overflow-y-hidden lg:place-self-end">
           <figure>
             <img
               src={feoaf}
@@ -125,7 +125,7 @@ const Projects = () => {
               className="h-full border-b  border-neutral/50"
             />
           </figure>
-          <div className="card-body">
+          <div className="card-body h-[300px]">
             <h2 className="card-title">Future Entrepreneurs Of America Foundation</h2>
             <p className="leading-4 text-sm text-base-content/80">An organization dedicated to developing, guiding, and mentoring young entrepreneurs.</p>
 
@@ -156,7 +156,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="card-actions mt-8 justify-start sm:justify-end space-x-2">
+            <div className="card-actions lg:absolute lg:right-8 lg:bottom-8 lg:w-full mt-8 justify-start sm:justify-end space-x-2">
               {/* <a href="https://www.insuranceenterpriseusa.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-base-300 p-3 text-center border transition-all duration-300 cursor-pointer hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:shadow-[2px_2px_0px_white]">
                 <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14" />
@@ -172,7 +172,7 @@ const Projects = () => {
         </div>
 
 
-        <div className="card border max-w-md overflow-y-hidden mx-auto relative">
+        <div className="card border max-w-xl overflow-y-hidden relative">
           <figure>
             <img
               src={portfolio}
@@ -180,7 +180,7 @@ const Projects = () => {
               className="h-full border-b  border-neutral/50"
             />
           </figure>
-          <div className="card-body flex-initial">
+          <div className="card-body h-[300px] flex-initial">
             <h2 className="card-title">My Portfolio</h2>
             <p className="leading-4 text-sm text-base-content/80">A simple showcase of my expertise with a clean and smooth design.</p>
 
