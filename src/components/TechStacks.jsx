@@ -1,12 +1,11 @@
 import mysql from "../assets/techstacks/mysql.png"
 import ghl from "../assets/techstacks/ghl.png"
-import java from "../assets/techstacks/java.svg"
 
 
 
 import { FaReact, FaWordpress, FaJs, FaHtml5, FaCss3Alt, FaGitAlt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMui, SiPhp } from "react-icons/si";
+import { SiMui, SiPhp, SiNextdotjs } from "react-icons/si";
 import { DiMaterializecss } from "react-icons/di";
 
 
@@ -35,7 +34,7 @@ const TechStacks = () => {
             <SiPhp className="" />
           </div>
           <div className="p-12 hover:bg-base-content hover:text-[#53c1de] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
-            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">React</p>
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">React JS</p>
             <FaReact className="" />
           </div>
           <div className="p-12 hover:bg-base-content hover:text-[#1572B6] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center">
@@ -83,9 +82,9 @@ const TechStacks = () => {
           </div>
 
 
-          <div className="p-12 hover:bg-base-content hover:text-[#38BDF8] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center md:col-span-2 lg:col-span-1">
-            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">Java</p>
-            <img src={java} alt="" className="w-full max-w-[100px] scale-75 grayscale group-hover:grayscale-0 transition-all" />
+          <div className="p-12 hover:bg-base-content hover:text-[#0a0a0a] text-base-content transition-all text-7xl group cursor-default relative flex justify-center items-center md:col-span-2 lg:col-span-1">
+            <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">Next JS</p>
+            <SiNextdotjs />
           </div>
           <div className="hover:bg-base-content group cursor-default relative flex justify-center items-center md:col-span-2 lg:col-span-1">
             <p className="absolute h-full w-full text-center top-12 ease-out opacity-0 group-hover:-translate-y-8 scale-0 group-hover:scale-100 group-hover:opacity-100 duration-300 transition-all text-lg text-base-content/90 group-hover:text-primary">MySQL</p>
